@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#explore_india_container {
+  width: 90%;
+  height: auto;
+  position: relative;
+}
+
+.explore_india_img {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.explore_india_goa {
+  padding: 2rem;
+}
