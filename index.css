@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+/* ------------ Explore India Box------------ */
+
+#explore_india_container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- Explore India Container First ------------*/
+.container_first {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 0.9rem;
+}
+
+/* ---------- Explore India Container Second ------------*/
+
+.container_second {
+  display: flex;
+  gap: 1.1rem;
+  justify-content: space-around;
+}
+
+.destinations_img {
+  height: 10rem;
+  width: 13rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.destinations_img_class {
+  height: 100%;
+  width: 100%;
+}
+
+.destinations_details {
+  margin-left: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.destinations_name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.destinations_properties {
+  font-size: 0.9rem;
+}
+
+/* ---------- Explore India Container Third ------------*/
+
+.left_side_btn, .left_btn {
+  position: absolute;
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  top: 50%;
+  left: 0;
+  transform: translate(-35%, -50%);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.788) 2px 15px 15px;
+}
+
+.right_side_btn, .right_btn {
+  position: absolute;
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  top: 50%;
+  right: 0;
+  transform: translate(29%, -50%);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.788) 2px 15px 15px;
+}
+
+
+/* ---------- Explore India is End ------------*/
+
+/* ---------- Quick and Easy and trip Planner start ----------- */
+
+
+#quick_easy_trip_container{
+  position: relative;
+  overflow: hidden;
+}
