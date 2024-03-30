@@ -1,49 +1,78 @@
 // ---------------Import HTML elements form index.html-----------------
-
 let rightSideBtn = document.querySelector(".right_side_btn");
 let leftSideBtn = document.querySelector(".left_side_btn");
 let exploreIndiaImg = document.querySelectorAll(".explore_india_img_container");
-let currentCards = 0;
+// easy and trip Planner
+let rightBtn = document.querySelector(".right_btn");
+let leftBtn = document.querySelector(".left_btn");
+const easyTrip = document.querySelectorAll(".easy_trip_img_container");
 
-// ---------------Function to move the cards to next-----------------
+// default values for any cards to move:
+let currentCards = 0;
 leftSideBtn.style.display = "none";
 
-function nextCard() {
-  if (currentCards < exploreIndiaImg.length - 6) {
+// ---------------Default Function to move the cards to next-----------------
+
+function nextCard(cardsToMove, rightButton, leftButton) {
+  if (currentCards < cardsToMove.length - 6) {
     currentCards++;
-    leftSideBtn.style.display = "inline";
-    moveCards(currentCards);
+    leftButton.style.display = "inline";
+    moveCards(currentCards, cardsToMove);
   }
 
-  if (currentCards === exploreIndiaImg.length - 6) {
-    rightSideBtn.style.display = "none";
+  if (currentCards === cardsToMove.length - 6) {
+    rightButton.style.display = "none";
   }
 }
 
-// ------------Function to move the cards to previous-----------------
-function prevCard() {
+// ------------Default Function to move the cards to previous-----------------
+function prevCard(cardsToMove, rightButton, leftButton) {
   if (currentCards > 0) {
     currentCards--;
-    moveCards(currentCards);
+    moveCards(currentCards, cardsToMove);
   }
 
   if (currentCards === 0) {
-    leftSideBtn.style.display = "none";
+    leftButton.style.display = "none";
   }
 
-  if (currentCards < exploreIndiaImg.length - 6) {
-    rightSideBtn.style.display = "inline";
+  if (currentCards < cardsToMove.length - 6) {
+    rightButton.style.display = "inline";
   }
 }
 
-// ---------------Function to move the cards-----------------
-function moveCards(currentCards) {
-  exploreIndiaImg.forEach((card, idx) => {
+// ---------------Defalut Function to move the cards-----------------
+function moveCards(currentCards, cardsToMove) {
+  cardsToMove.forEach((card, idx) => {
     card.style.transform = `translateX(${idx - currentCards * 110}%)`;
   });
 }
 
+//--------------------------- Function to call and execute the various functions to move the cards-------------------------:
+
+// ---------Explore India Container to call the functions: --------------
+function exploreIndiaLeft() {
+  nextCard(exploreIndiaImg, rightSideBtn, leftSideBtn);
+}
+function exploreIndiaRight() {
+  prevCard(exploreIndiaImg, rightSideBtn, leftSideBtn);
+}
+
+moveCards(currentCards, exploreIndiaImg);
+
+//----------- Quick and easy Trip to call the functions: --------------
+function quickEasyRight() {
+  nextCard(easyTrip, rightBtn, leftBtn);
+}
+
+function quickEasyLeft() {
+  prevCard(easyTrip, rightBtn, leftBtn);
+}
+
 // ---------------Event Listeners-----------------
-moveCards(currentCards);
-rightSideBtn.addEventListener("click", nextCard);
-leftSideBtn.addEventListener("click", prevCard);
+// Explore India
+rightSideBtn.addEventListener("click", exploreIndiaLeft);
+leftSideBtn.addEventListener("click", exploreIndiaRight);
+// Quick and Easy
+rightBtn.addEventListener("click", quickEasyRight);
+leftBtn.addEventListener("click", quickEasyLeft);
