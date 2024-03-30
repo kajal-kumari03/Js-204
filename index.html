@@ -5,75 +5,341 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Storage</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- ------------ Explore India Box-------------->
     <div id="explore_india_container">
-      <div class="explore_india_title">
-        <p class="explore_india">Explore India</p>
-        <p class="explore_india_desc">
-          These popular destinations have a lot to offer
-        </p>
+      <!------------ Explore India Container First -------------->
+      <div id="explore_india_container_first" class="container_first">
+        <p class="title">Explore India</p>
+        <p class="desc">These popular destinations have a lot to offer</p>
       </div>
-      <div class="explore_india_img">
-        <div class="explore_india_goa">
-          <img src="images/goa.jpg" alt="Gao" class="goa" />
-          <p class="goa_name">Goa</p>
-          <p class="goa_properties">5,260 properties</p>
+
+      <!------------ Explore India Container Second -------------->
+      <div class="container_second">
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/goa.jpg"
+              alt="Gao"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Goa</p>
+            <p class="destinations_properties">5,260 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/newdelhi.jpg" alt="New Delhi" class="goa" />
-          <p class="goa_name">New Delhi</p>
-          <p class="goa_properties">2,917 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/newdelhi.jpg"
+              alt="New Delhi"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">New Delhi</p>
+            <p class="destinations_properties">2,917 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/northgoa.jpg" alt="North Goa" class="northgoa" />
-          <p class="goa_name">North Goa</p>
-          <p class="goa_properties">3,916 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/northgoa.jpg"
+              alt="North Goa"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">North Goa</p>
+            <p class="destinations_properties">3,916 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/mumbai.jpg" alt="Mumbai" class="goa" />
-          <p class="goa_name">Mumbai</p>
-          <p class="goa_properties">1,656 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/mumbai.jpg"
+              alt="Mumbai"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Mumbai</p>
+            <p class="destinations_properties">1,656 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/jaipur.jpg" alt="Jaipur" class="goa" />
-          <p class="goa_name">Jaipur</p>
-          <p class="goa_properties">1,559 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/jaipur.jpg"
+              alt="Jaipur"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Jaipur</p>
+            <p class="destinations_properties">1,559 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/rishikesh.jpg" alt="Rishikesh" class="goa" />
-          <p class="goa_name">Rishikesh</p>
-          <p class="goa_properties">477 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/rishikesh.jpg"
+              alt="Rishikesh"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Rishikesh</p>
+            <p class="destinations_properties">477 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/bangalore.jpg" alt="bangalore" class="goa" />
-          <p class="goa_name">Bangalore</p>
-          <p class="goa_properties">2,049 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/bangalore.jpg"
+              alt="bangalore"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Bangalore</p>
+            <p class="destinations_properties">2,049 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/ooty.jpg" alt="Ooty" class="goa" />
-          <p class="goa_name">Ooty</p>
-          <p class="goa_properties">470 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/ooty.jpg"
+              alt="Ooty"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Ooty</p>
+            <p class="destinations_properties">470 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/southgoa.jpg" alt="south Goa" class="goa" />
-          <p class="goa_name">South Goa</p>
-          <p class="goa_properties">1,375 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/southgoa.jpg"
+              alt="south Goa"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">South Goa</p>
+            <p class="destinations_properties">1,375 properties</p>
+          </div>
         </div>
-        <div class="explore_india_goa">
-          <img src="images/lonavala.jpg" alt="lonavala" class="goa" />
-          <p class="goa_name">Lonavala</p>
-          <p class="goa_properties">751 properties</p>
+        <div class="explore_india_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/lonavala.jpg"
+              alt="lonavala"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Lonavala</p>
+            <p class="destinations_properties">751 properties</p>
+          </div>
         </div>
       </div>
 
-      <div>
-        <button class="right_side_btn"><i class="fa-solid fa-less-than"></i></button>
-        <button class="left_side_btn"> <i class="fa-solid fa-greater-than"></i></button>
+      <!------------ Explore India Container Third ---------------->
+      <div id="explore_india_container_third">
+        <button class="left_side_btn">
+          <i class="fa-solid fa-less-than"></i>
+        </button>
+        <button class="right_side_btn">
+          <i class="fa-solid fa-greater-than"></i>
+        </button>
       </div>
     </div>
+
+    <!------------------ Explore india Container is End ----------------->
+
+    <!------------------ Quick and Easy Trip Planner --------------->
+
+    <div id="quick_easy_trip_container">
+      <!------------ Quick and Easy Trip Container First -------------->
+      <div class="container_first">
+        <p class="title">Quick and easy trip planner</p>
+        <p class="desc">
+          Pick a vibe and explore the top destinations in india
+        </p>
+      </div>
+
+      <!----------------- Quick and Easy Trip Container Second -------------->
+
+      <div id="quick_easy_trip_container_second" class="container_second">
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/deharadun.jpg"
+              alt="Dehradun"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">deharadun</p>
+            <p class="destinations_distance">202 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/ramnagar.jpg"
+              alt="Ram Nagar"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Ram Nagar</p>
+            <p class="destinations_distance">202 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/garjia.jpg"
+              alt="Gargia"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Gargia</p>
+            <p class="destinations_distance">208 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/mussoorie.jpg"
+              alt="mussoorie"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Mussoorie</p>
+            <p class="destinations_distance">216 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/kasuali.jpg"
+              alt="kasuali"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">kasuali</p>
+            <p class="destinations_distance">251 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/shimla.jpg"
+              alt="Shimla"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Shimla</p>
+            <p class="destinations_distance">272 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/kasal.jpg"
+              alt="kasol"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Kasol</p>
+            <p class="destinations_distance">373 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/Manali.jpg"
+              alt="Manali"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">Manali</p>
+            <p class="destinations_distance">399 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/dalhousie.jpg"
+              alt="DalHousie"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">DalHousie</p>
+            <p class="destinations_distance">448 km away</p>
+          </div>
+        </div>
+
+        <div class="easy_trip_img_container">
+          <div class="destinations_img">
+            <img
+              src="images/mcleodganj.jpg"
+              alt="McLeod Ganj"
+              class="destinations_img_class"
+            />
+          </div>
+          <div class="destinations_details">
+            <p class="destinations_name">McLeod Ganj</p>
+            <p class="destinations_distance">409 km away</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="quick_easy_trip_container_third">
+        <button class="quick_container_left_btn left_btn">
+          <i class="fa-solid fa-less-than"></i>
+        </button>
+        <button class="quick_container_right_btn right_btn">
+          <i class="fa-solid fa-greater-than"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-----------------Javascript Script ---------------------->
+    <script src="index.js"></script>
+    <!------------------JavaScript Script ------------------->
   </body>
 </html>
-
-<script src="index.js"></script>

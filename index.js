@@ -1,25 +1,49 @@
-let exploreIndiaImg = document.querySelector(".explore_india_img");
+// ---------------Import HTML elements form index.html-----------------
+
 let rightSideBtn = document.querySelector(".right_side_btn");
 let leftSideBtn = document.querySelector(".left_side_btn");
-let imgCount = 0;
+let exploreIndiaImg = document.querySelectorAll(".explore_india_img_container");
+let currentCards = 0;
 
-rightSideBtn.addEventListener("click", () => {
-    try {
-        if (imgCount < exploreIndiaImg.children.length - 1) {
-            imgCount++;
-        } else {
-            imgCount = 0;
-        }
-        moveContainer();
-    } catch (err) {
-        console.log(err);
-    }
-    
-});
+// ---------------Function to move the cards to next-----------------
+leftSideBtn.style.display = "none";
 
-function moveContainer() {
-    for (let i = 0; i < exploreIndiaImg.children.length; i++) {
-        exploreIndiaImg.children[i].style.transform = `translateX(-${imgCount * 100}%)`;
-    }
+function nextCard() {
+  if (currentCards < exploreIndiaImg.length - 6) {
+    currentCards++;
+    leftSideBtn.style.display = "inline";
+    moveCards(currentCards);
+  }
+
+  if (currentCards === exploreIndiaImg.length - 6) {
+    rightSideBtn.style.display = "none";
+  }
 }
-moveContainer();
+
+// ------------Function to move the cards to previous-----------------
+function prevCard() {
+  if (currentCards > 0) {
+    currentCards--;
+    moveCards(currentCards);
+  }
+
+  if (currentCards === 0) {
+    leftSideBtn.style.display = "none";
+  }
+
+  if (currentCards < exploreIndiaImg.length - 6) {
+    rightSideBtn.style.display = "inline";
+  }
+}
+
+// ---------------Function to move the cards-----------------
+function moveCards(currentCards) {
+  exploreIndiaImg.forEach((card, idx) => {
+    card.style.transform = `translateX(${idx - currentCards * 110}%)`;
+  });
+}
+
+// ---------------Event Listeners-----------------
+moveCards(currentCards);
+rightSideBtn.addEventListener("click", nextCard);
+leftSideBtn.addEventListener("click", prevCard);
