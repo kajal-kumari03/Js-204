@@ -4,28 +4,137 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Booking.com</title>
-<link rel="stylesheet" href="index.css">
+<Style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ #fir{
+  background-color: #0a43ae;
+ }
+  header {
+    width: 90%;
+   margin-left: 10%;
+   
+  }
+  
+  .header-container {
+   padding :20px;
+   width: 80%;
+    display: flex;
+   height: 60px;
+    justify-content: space-between;
+    
+    width:80%;
+    
+  }
+  #mid>a{
+    color: white;
+   
+  }
+   #mid{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    align-items: center;
+   }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  img{
+    width: 40px;
+    height: 20px;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1000px;
+    padding-top: 60px;
+  }
+  nav {
+    flex: 1;
+    margin-top: 20px;
+
+  }
+  
+  nav ul {
+    list-style: none;
+   
+   
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 20px; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;color: white;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  .sign-in {
+    flex: 0 0 150px;
+    text-align: right;
+  }
+  
+  .sign-in a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  
+  .search-bar {
+    width: 90%;
+   margin-left: 10%;
+
+    padding: 20px;
+   display:flex;
+  
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 1200px;
+    margin-left: 300px;
+  }
+  
+
+
+ 
+
+</Style>
 </head>
 <body>
 
     <div id="fir">
 <header>
   <div class="header-container">
- <div style="display: grid; grid-template-columns: repeat(2,1fr); justify-content: space-around;
+ <div style="display: grid; grid-template-columns: repeat(3,1fr); justify-content: space-around;
  align-items: center;margin: 30px;gap: 30px;" >
     <div class="logo">
       <img src="./Capture.PNG" alt="Booking.com logo">
     </div>
    <div id="mid">
-      <a href ="#" style="color: white;">INR</a>
+     
       <img src="https://tse4.mm.bing.net/th?id=OIP._BpEyvpqaz9IUZrhyyGdbAHaE7&pid=Api&P=0&h=180" alt="imge">
-      <a href="#" style="color: white;">?</a>
-      <a href ="#" style="color: white;">List your property</a>
-    <!-- </div>
+      <a href="#">?</a>
+
+    </div>
     
-    <div class="sign-in"> -->
-      <a href="#" style="border: 1px solid white;background-color: white;padding: 5px;border-radius: 5px;height: 30px;">Register</a>
-      <a href="./sign-in.html" style="border: 1px solid white;background-color: white;padding: 5px;height: 30px;border-radius: 5px;">Sign in</a>
+    <div class="sign-in">
+      <a href="#" style="border: 1px solid white;background-color: white;padding: 10px;border-radius: 5px;">Register</a>
+      <a href="./sign-in.html" style="border: 1px solid white;background-color: white;padding: 10px;border-radius: 5px;">Sign in</a>
     </div>
   </div>
 </div>
@@ -41,26 +150,20 @@
       </ul>
     </nav>
  </div>
- <div class="container">
-  <div class="box">
-    <h1 style="font-weight:900;">Sign in, save money</h1>
-    <h6 style="font-size: larger;margin-top: -5px;">Save 10% or more at participating properties. Just </br>look for the blue Genius label.</h6>
-    <button class="btn">Sign in or register</button>
-  </div>
-  <img style="width: 300px;height: 300px; margin-top: -50px;" src="https://r-xx.bstatic.com/xdata/images/xphoto/300x300/316543397.png?k=c42a7cb04035fb44ee49b1f539e6b2bfb745955a8fe8df2db662c938077cd021&o=" alt="Genius Icon">
-</div>
 </header>
-
 </div>
 
-<div id="main">
 
-  <div class="search-bar">
+<div style="  background-color: rgba(234, 227, 227, 0.968);height: 200px;">
+    <h2>Compare and book flights with ease</h2>
+    <h6>Discover your next dream destination</h6>
+    
+ <div class="search-bar">
     <div class="location">
       <input type="text" id="location" name="location" placeholder="Chennai">
     </div>
-    <div class="date-range" style="display:flex;
-    flex-direction:row;
+    <div class="date-range" style=" display:flex;
+    flex-direction: row;
     width: auto;
     padding: 10px;">
      <div >
@@ -91,19 +194,10 @@
       </select>
     </div>
     <div class="search-button">
-      <button type="submit" id="button">Search</button>
+      <button type="submit">Search</button>
     </div>
   </div>
-  <div class="accommodation-type">
-    <input type="checkbox" id="entire-home" name="entire-home">
-    <label for="entire-home">I'm looking for flights</label>
   </div>
-
-</div>
-
-
-
-
 </body>
 </html> 
 
