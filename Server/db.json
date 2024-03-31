@@ -1,0 +1,44 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "john_doe",
+        "email": "john.doe@example.com",
+        "phone": "+1234567890",
+        "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "Anystate",
+          "zip": "12345"
+        }
+      },
+      {
+        "id": 2,
+        "username": "jane_smith",
+        "email": "jane.smith@example.com",
+        "phone": "+1987654321",
+        "address": {
+          "street": "456 Elm St",
+          "city": "Othertown",
+          "state": "Anotherstate",
+          "zip": "67890"
+        }
+      },
+      {
+        "id": 3,
+        "username": "bob_jones",
+        "email": "bob.jones@example.com",
+        "phone": "+1122334455",
+        "address": {
+          "street": "789 Oak St",
+          "city": "Somewhere",
+          "state": "Somestate",
+          "zip": "54321"
+        }
+      }
+    ],
+    "pratik":[{
+
+    }]
+   
+  }
