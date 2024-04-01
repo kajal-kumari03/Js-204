@@ -1,126 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <form>
-        <div>
-            <img src="https://t-cf.bstatic.com/design-assets/assets/v3.109.0/illustrations-traveller/GlobeGeniusBadge.png"
-                alt="">
-        </div>
-        <div class="form-1">
-            <h2>Get instant discounts</h2>
-            <p>Just sign into your Booking.com account and look for the blue Genius logo to save</p>
-            <button id="signin-btn" onclick=" window.open('signin.html','_blank')" class="signin-btn">Sign in</button>
-            <button onclick=" window.open('signin.html','_blank')" class="register-btn">Register</button>
-        </div>
-    </form>
-    <div id="container">
-        <div id="text-container">
-            <h2 class="first-h2">Find <span id="dynamic-text">Book</span></h2>
-            <h2 class="second-h2">for your next trip</h2>
-            <button class="discover">Discover Homes</button>
-        </div>
-        <div id="img-container">
-            <img src="https://cf.bstatic.com/psb/capla/static/media/bh_aw_cpg_main_image.b4347622.png" alt="Left Image">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking.com</title>
+    <link rel="stylesheet" href="cardStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div id="card_box"></div>
+      <div id="card_box1"></div>
+      <div id="card_box2"></div>
+      <div id="card_box3"></div>
+      <div id="card_box4"></div>
     </div>
-    <div class="foot">
-        <h2 class="foot-h2">Destinations we love</h2>
-        <div class="button-container">
-            <button class="btn1">Regions</button>
-            <button class="btn2">Cities</button>
-            <button class="btn3">Places of intetest</button>
-        </div>
-        <div class="row">
-            <div>
-                <a href="#Santorini">Santorini</a>
-                <p>1,764 properties</p>
-            </div>
-            <div>
-                <a href="#Ras_Al_Khaimah">Ras Al Khaimah</a>
-                <p>113 properties</p>
-            </div>
-            <div>
-                <a href="#Tenerife">Tenerife</a>
-                <p>9,616 properties</p>
-            </div>
-            <div>
-                <a href="#Lake_District">Lake District</a>
-                <p>2,404 properties</p>
-            </div>
-            <div>
-                <a href="#Isle_of_Wight">Isle of Wight</a>
-                <p>934 properties</p>
-            </div>
-            <div>
-                <a href="#Hawaii">Hawaii</a>
-                <p>5,517 properties</p>
-            </div>
-            <div>
-                <a href="#Guernsey">Guernsey</a>
-                <p>61 properties</p>
-            </div>
-            <div>
-                <a href="#Uttar_Pradesh">Uttar Pradesh</a>
-                <p>4,382 properties</p>
-            </div>
-            <div>
-                <a href="#Phuket_Province">Phuket Province</a>
-                <p>5,500 properties</p>
-            </div>
-            <div>
-                <a href="#Bali">Bali</a>
-                <p>12,693 properties</p>
-            </div>
-            <div>
-                <a href="#Bihar">Bihar</a>
-                <p>762 properties</p>
-            </div>
-            <div>
-                <a href="#England">England</a>
-                <p>74,076 properties</p>
-            </div>
-            <div>
-                <a href="#Jersey">Jersey</a>
-                <p>89 properties</p>
-            </div>
-            <div>
-                <a href="#Cornwall">Cornwall</a>
-                <p>5,284 properties</p>
-            </div>
-            <div>
-                <a href="#Ibiza">Ibiza</a>
-                <p>1,644 properties</p>
-            </div>
-            <div>
-                <a href="#Mykonos">Mykonos</a>
-                <p>1,453 properties</p>
-            </div>
-            <div>
-                <a href="#Texel">Texel</a>
-                <p>410 properties</p>
-            </div>
-            <div>
-                <a href="#Zanzibar">Zanzibar</a>
-                <p>835 properties</p>
-            </div>
-            <div>
-                <a href="#Bora_Bora">Bora Bora</a>
-                <p>59 properties</p>
-            </div>
-        </div>
 
-        
-
-</body>
-<script src="script.js"></script> 
+    <script type="module" src="cardDOM.js"></script>
+    <script type="module" src="cardServer.js"></script>
+    <script type="module" src="cardFuncToMove.js"></script>
+  </body>
 </html>
-

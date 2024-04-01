@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+#card_box,
+#card_box1,
+#card_box2,
+#card_box3,
+#card_box4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.container_first {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 0.9rem;
+}
+
+.container_second {
+  display: flex;
+  gap: 1.1rem;
+  justify-content: space-around;
+}
+
+.destinations_img {
+  height: 10rem;
+  width: 13rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.destinations_img_class {
+  height: 100%;
+  width: 100%;
+}
+
+.destinations_details {
+  margin-left: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.destinations_name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.destinations_properties {
+  font-size: 0.9rem;
+}
+
+.left_btn,
+.right_btn {
+  position: absolute;
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.788) 2px 15px 15px;
+}
+
+.left_btn {
+  left: 0;
+  top: 50%;
+  transform: translate(-35%, -50%);
+}
+
+.right_btn {
+  top: 50%;
+  right: 0;
+  transform: translate(29%, -50%);
+}
+
+/* ------------------ 4 Cards box -------------- */
+
+#card_box2
+  > .container_second
+  > .card_container
+  > .explore_india_img_container
+  > .destinations_img,
+#card_box3
+  > .container_second
+  > .card_container
+  > .explore_india_img_container
+  > .destinations_img,
+#card_box4
+  > .container_second
+  > .card_container
+  > .explore_india_img_container
+  > .destinations_img {
+  width: 20rem;
+  height: 15rem;
+}
+
+.destination_reviews {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.destination_reviews_star {
+  background-color: rgb(43, 43, 167);
+  color: white;
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+.destination_reviews_verbal {
+  font-size: 0.9rem;
+}
+
+.destination_reviews_starting_from {
+  font-weight: bolder;
+  margin-left: 8.5rem;
+  margin-top: 1rem;
+}
+
+#card_box1 {
+  margin-top: 3rem;
+}
+
+#card_box2 {
+  margin-top: 3rem;
+}
+
+#card_box3,
+#card_box4 {
+  margin-top: 10rem;
+}
+
+#card_box3 .container_second .card_container .explore_india_img_container,
+#card_box2 .container_second .card_container .explore_india_img_container {
+  height: 23rem;
+  box-shadow: 2px 5px 8px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid;
+  border-radius: 10px;
+}
+
+#card_box4 {
+  margin-bottom: 10rem;
+}
+
+/* Sign in page */ 
+
+/* #sign_container{
+  display: flex;
+}
+
+.sign_properties{
+  display: flex;
+
+}
+
+.sign_properties:nth-child(2){
+  height: 5px;
+  width: 5px;
+}
+
+.sign_properties:nth-child(2):nth-child(1){
+  width: 100%;
+  height: 100%;
+} */
