@@ -8,3 +8,17 @@ function changeText() {
 }
 setInterval(changeText, 2000);
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if the user is signed in
+    var userEmail = localStorage.getItem('userEmail');
+    if (userEmail) {
+        // User is signed in, update UI accordingly
+        document.getElementById('user-welcome').innerText = 'Welcome, ' + userEmail;
+    } else {
+        // User is not signed in, handle accordingly
+        // For example, redirect to sign-in page
+        window.location.href = 'signin.html'; // Change 'signin.html' to your sign-in page
+    }
+});
+
