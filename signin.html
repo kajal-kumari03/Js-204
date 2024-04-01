@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-in/register</title>
-    
-<link rel="stylesheet" href="signin.css">
+    <title>Sign-in/Register</title>
+    <link rel="stylesheet" href="signin.css">
 </head>
-
 <body>
     <header class="nav">
         <img src="/logo.png" alt="Logo" id="logo" />
@@ -28,7 +25,7 @@
             <h2>Sign in or create an account</h2>
             <label for="email">Email address</label>
             <input id="email" type="email" placeholder="Enter your email address">
-            <button class="continue" onclick="validateEmail()">Continue with email</button>
+            <button class="continue" onclick="continueToPassword()">Continue with email</button>
             <div id="error-message" style="display: none;">Incorrect email format!</div>
             <div class="horizontal-line">
                 <p>or use one of these options</p>
@@ -58,17 +55,12 @@
             <p>By signing in or creating an account, you agree with our <a href="#">Terms & Conditions</a> and <a
                     href="#">Privacy Statement</a></p>
         </div>
-
-
         <div class="footer">
             <p>All rights reserved.</p>
             <p>Copyright (2006-2024) – Booking.com™</p>
         </div>
     </div>
 
-
-
+    <script src="signin.js"></script>
 </body>
-<script src="signin.js"></script>
-
 </html>
