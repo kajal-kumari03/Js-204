@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking.com</title>
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <div id="fir">
+<header>
+  <div class="header-container">
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); justify-content: space-around;
+ align-items: center;margin: 30px;gap: 30px;" >
+    <div class="logo">
+      <img src="./Capture.PNG" alt="Booking.com logo">
+    </div>
+   <div id="mid">
+      <!-- <a href ="./currency.html" style="color: white;"><button id="currencyButton">Select Currency</button></a>
+      <a href="./language.html"><img src="https://tse4.mm.bing.net/th?id=OIP._BpEyvpqaz9IUZrhyyGdbAHaE7&pid=Api&P=0&h=180" alt="imge"></a> -->
+      <button id="currencyButton"><b>INR</b></button>
+      <button id="languageSelectionButton"  data-tooltip="Select your language"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-FwODtlt4e_d0r-5WtZzFRfkgGH3JQqfaA&usqp=CAU" alt=""></button>
+      <a href ="#" style="color: white;">List your property</a>
+    <!-- </div>
+    
+    <div class="sign-in"> -->
+      <a href="./sign-in.html" style="border: 1px solid white;background-color: white;padding: 5px;border-radius: 5px;height: 30px;margin-right:5px ;">Register</a>
+      <a href="./sign-in.html" style="border: 1px solid white;background-color: white;padding: 5px;height: 30px;border-radius: 5px;">Sign in</a>
+    </div>
+  </div>
+</div>
+  <div class="nav">
+      <nav>
+      <ul>
+        <li style="font-size: larger;"><a href="./index.html">Stays</a></li>
+        <li style="font-size: larger;"><a href="./flight.html">Flights</a></li>
+        <li style="font-size: larger;"><a href="#">Flight + Hotel</a></li>
+        <li style="font-size: larger;"><a href="#">Car rentals</a></li>
+        <li style="font-size: larger;"><a href="#">Attractions</a></li>
+        <li style="font-size: larger;"><a href="#">Airport taxis</a></li>
+      </ul>
+    </nav>
+ </div>
+ <div class="container">
+  <div class="box">
+    <h1 style="font-weight:900;">Sign in, save money</h1>
+    <h6 style="font-size: larger;margin-top: -5px;">Save 10% or more at participating properties. Just </br>look for the blue Genius label.</h6>
+    <button class="btn" ><a href="./sign-in.html">Sign in or register</a></button>
+  </div>
+  <img style="width: 300px;height: 300px; margin-top: -50px;" src="https://r-xx.bstatic.com/xdata/images/xphoto/300x300/316543397.png?k=c42a7cb04035fb44ee49b1f539e6b2bfb745955a8fe8df2db662c938077cd021&o=" alt="Genius Icon">
+</div>
+</header>
+
+</div>
+
+<div id="main">
+
+  <div class="search-bar">
+    <div class="location">
+      <input type="text" id="location" name="location" placeholder="select your place">
+    </div>
+    <div class="date-range" style="display:flex;
+    flex-direction:row;
+    width: auto;">
+     <div >
+      <input type="date" id="check-in" name="check-in" value="2024-03-27" style="border-right:none"></div>
+      <div>
+      <input type="date" id="check-out" name="check-out" value="2024-03-30" style="border-left:none;"></div>
+    </div>
+    <div class="guests">
+      <select name="guests" id="guests" style="border-right:none;">
+        <option value="1">1 adult</option>
+        <option value="2">2 adults</option>
+        <option value="3">3 adults</option>
+        <option value="4">4 adults</option>
+        <option value="other">More than 4 adults</option>
+      </select>
+      <select name="children" id="children" style="border-left:none;border-right:none">
+        <option value="0">0 children</option>
+        <option value="1">1 child</option>
+        <option value="2">2 children</option>
+        <option value="3">3 children</option>
+        <option value="other">More than 3 children</option>
+      </select>
+      <select name="rooms" id="rooms" style="border-left:none;">
+        <option value="1">1 room</option>
+        <option value="2">2 rooms</option>
+        <option value="3">3 rooms</option>
+        <option value="other">More than 3 rooms</option>
+      </select>
+    </div>
+    <div class="search-button">
+      <button type="submit" id="button"><a href="./confirm.html">Search</a></button>
+    </div>
+  </div>
+  <div class="accommodation-type" >
+    <input type="checkbox" id="entire-home" name="entire-home">
+    <label for="entire-home">I'm looking for flights</label>
+  </div>
+
+</div>
+
+<p id="message"></p>
+
+
+<!-- Toggle popup for currency selection -->
+<div id="togglePopup" class="toggle-popup">
+    <p>Select your currency</p>
+    <p>Where applicable, prices will be converted to—and shown in—the currency you select. The currency you pay in may differ based on your reservation, and a service fee may also apply.</p>
+    <h3>Suggested for you</h3>
+    <label for="usd">
+      <input type="radio" id="usd" name="currency" value="USD">
+      U.S. Dollar <br> (USD)
+    </label>
+    <label for="eur">
+      <input type="radio" id="eur" name="currency" value="EUR">
+      Euro <br> (EUR)
+    </label>
+    <label for="aed">
+      <input type="radio" id="aed" name="currency" value="AED">
+      United Arab Emirates Dirham (AED)
+    </label>
+    <label for="gbp">
+      <input type="radio" id="gbp" name="currency" value="GBP">
+      Pound Sterling <br>(GBP)
+    </label>
+    <label for="cny">
+      <input type="radio" id="cny" name="currency" value="CNY">
+      Chinese Yuan <br> (CNY)
+    </label>
+    <label for="aud">
+      <input type="radio" id="aud" name="currency" value="AUD">
+      Australian Dollar (AUD)
+    </label>
+    <!-- Add more suggested currencies here -->
+    <h3>All currencies</h3>
+    <label for="inr">
+      <input type="radio" id="inr" name="currency" value="INR">
+      Indian Rupee <br>(INR)
+    </label>
+    <label for="ars">
+      <input type="radio" id="ars" name="currency" value="ARS">
+      Argentine Peso<br> (ARS)
+    </label>
+    <label for="azn">
+      <input type="radio" id="azn" name="currency" value="AZN">
+      Azerbaijani Manat <br>(AZN)
+    </label>
+    <label for="bhd">
+      <input type="radio" id="bhd" name="currency" value="BHD">
+      Bahraini Dinar (BHD)
+    </label>
+    <label for="brl">
+      <input type="radio" id="brl" name="currency" value="BRL">
+      Brazilian Real <br> (BRL)
+    </label>
+    <label for="bgn">
+      <input type="radio" id="bgn" name="currency" value="BGN">
+      Bulgarian Lev (BGN)
+    </label>
+    <label for="cad">
+      <input type="radio" id="cad" name="currency" value="CAD">
+      Canadian Dollar (CAD)
+    </label>
+    <label for="clp">
+      <input type="radio" id="clp" name="currency" value="CLP">
+      Chilean Peso <br> (CLP)
+    </label>
+    <label for="cny2">
+      <input type="radio" id="cny2" name="currency" value="CNY">
+      Chinese Yuan (CNY)
+    </label>
+    <label for="cop">
+      <input type="radio" id="cop" name="currency" value="COP">
+      Colombian Peso (COP)
+    </label>
+    <label for="czk">
+      <input type="radio" id="czk" name="currency" value="CZK">
+      Czech Koruna (CZK)
+    </label>
+    <label for="dkk">
+      <input type="radio" id="dkk" name="currency" value="DKK">
+      Danish Krone (DKK)
+    </label>
+    <label for="egp">
+      <input type="radio" id="egp" name="currency" value="EGP">
+      Egyptian Pound (EGP)
+    </label>
+    <label for="eur2">
+      <input type="radio" id="eur2" name="currency" value="EUR">
+      Euro <br>(EUR)
+    </label>
+    <label for="fjd">
+      <input type="radio" id="fjd" name="currency" value="FJD">
+      Fijian Dollar <br> (FJD)
+    </label>
+    <label for="gel">
+      <input type="radio" id="gel" name="currency" value="GEL">
+      Georgian Lari (GEL)
+    </label>
+    <label for="hkd">
+      <input type="radio" id="hkd" name="currency" value="HKD">
+      Hong Kong Dollar (HKD)
+    </label>
+    <label for="huf">
+      <input type="radio" id="huf" name="currency" value="HUF">
+      Hungarian Forint (HUF)
+    </label>
+    <label for="isk">
+      <input type="radio" id="isk" name="currency" value="ISK">
+      Icelandic Króna (ISK)
+    </label>
+    <label for="idr">
+      <input type="radio" id="idr" name="currency" value="IDR">
+      Indonesian Rupiah (IDR)
+    </label>
+    <label for="ils">
+      <input type="radio" id="ils" name="currency" value="ILS">
+      Israeli New Shekel (ILS)
+    </label>
+    <label for="jpy">
+      <input type="radio" id="jpy" name="currency" value="JPY">
+      Japanese Yen (JPY)
+    </label>
+    <label for="jod">
+      <input type="radio" id="jod" name="currency" value="JOD">
+      Jordanian Dinar (JOD)
+    </label>
+    <label for="kzt">
+      <input type="radio" id="kzt" name="currency" value="KZT">
+      Kazakhstani Tenge (KZT)
+    </label>
+    <label for="kwd">
+      <input type="radio" id="kwd" name="currency" value="KWD">
+      Kuwaiti Dinar (KWD)
+    </label>
+    <label for="myr">
+      <input type="radio" id="myr" name="currency" value="MYR">
+      Malaysian Ringgit (MYR)
+    </label>
+    <label for="mxn">
+      <input type="radio" id="mxn" name="currency" value="MXN">
+      Mexican Peso (MXN)
+    </label>
+    <label for="mdl">
+      <input type="radio" id="mdl" name="currency" value="MDL">
+      Moldovan Leu (MDL)
+    </label>
+    <label for="nad">
+      <input type="radio" id="nad" name="currency" value="NAD">
+      Namibian Dollar (NAD)
+    </label>
+    <label for="twd">
+      <input type="radio" id="twd" name="currency" value="TWD">
+      New Taiwan Dollar (TWD)
+    </label>
+    <label for="nzd">
+      <input type="radio" id="nzd" name="currency" value="NZD">
+      New Zealand Dollar (NZD)
+    </label>
+    <label for="nok">
+      <input type="radio" id="nok" name="currency" value="NOK">
+      Norwegian Krone (NOK)
+    </label>
+    <label for="omr">
+      <input type="radio" id="omr" name="currency" value="OMR">
+      Omani Rial (OMR)
+    </label>
+    <label for="pln">
+      <input type="radio" id="pln" name="currency" value="PLN">
+      Polish Złoty (PLN)
+    </label>
+    <label for="gbp2">
+      <input type="radio" id="gbp2" name="currency" value="GBP">
+      Pound Sterling (GBP)
+    </label>
+    <label for="qar">
+      <input type="radio" id="qar" name="currency" value="QAR">
+      Qatari Riyal (QAR)
+    </label>
+    <label for="ron">
+      <input type="radio" id="ron" name="currency" value="RON">
+      Romanian Leu (RON)
+    </label>
+    <label for="rub">
+      <input type="radio" id="rub" name="currency" value="RUB">
+      Russian Ruble (RUB)
+    </label>
+    <label for="sar">
+      <input type="radio" id="sar" name="currency" value="SAR">
+      Saudi Arabian Riyal (SAR)
+    </label>
+    <label for="sgd">
+      <input type="radio" id="sgd" name="currency" value="SGD">
+      Singaporean Dollar (SGD)
+    </label>
+    <label for="zar">
+      <input type="radio" id="zar" name="currency" value="ZAR">
+      South African Rand (ZAR)
+    </label>
+    <label for="krw">
+      <input type="radio" id="krw" name="currency" value="KRW">
+      South Korean Won (KRW)
+    </label>
+    
+    <label for="chf">
+      <input type="radio" id="chf" name="currency" value="CHF">
+      Swiss Franc (CHF)
+    </label>
+    <label for="thb">
+      <input type="radio" id="thb" name="currency" value="THB">
+      Thai Baht (THB)
+    </label>
+    <label for="try">
+      <input type="radio" id="try" name="currency" value="TRY">
+      Turkish Lira (TRY)
+    </label>
+    <label for="usd2">
+      <input type="radio" id="usd2" name="currency" value="USD">
+      U.S. Dollar (USD)
+    </label>
+    <label for="sek">
+      <input type="radio" id="sek" name="currency" value="SEK">
+      Swedish Krona (SEK)
+    </label>
+    <label for="uah">
+      <input type="radio" id="uah" name="currency" value="UAH">
+      Ukrainian Hryvnia (UAH)
+    </label>
+    <label for="aed2">
+      <input type="radio" id="aed2" name="currency" value="AED">
+      United Arab Emirates Dirham (AED)
+    </label>
+    <label for="xof">
+      <input type="radio" id="xof" name="currency" value="XOF">
+      West African CFA Franc (XOF)
+    </label>
+  </div>
+  
+  
+  <div id="languageTogglePopup" class="language-toggle-popup">
+    <h2>Suggested for you</h2>
+    <label for="english_uk">
+      <input type="radio" id="english_uk_language" name="language" value="English (UK)">
+      English (UK)
+    </label>
+    <label for="hindi">
+      <input type="radio" id="hindi_language" name="language" value="हिन्दी">
+      हिन्दी
+    </label>
+    <label for="french">
+      <input type="radio" id="french_language" name="language" value="Français">
+      Français
+    </label>
+    <label for="chinese">
+      <input type="radio" id="chinese_language" name="language" value="简体中文">
+      简体中文
+    </label>
+  
+    <h2>All languages</h2>
+    <label for="english_us">
+      <input type="radio" id="english_us_language" name="language" value="English (US)">
+      English (US)
+    </label>
+    <label for="english_uk">
+      <input type="radio" id="english_uk_language_2" name="language" value="English (UK)">
+      English (UK)
+    </label>
+    <label for="hindi">
+      <input type="radio" id="hindi_language_2" name="language" value="हिन्दी">
+      हिन्दी
+    </label>
+    <label for="german">
+      <input type="radio" id="german_language" name="language" value="Deutsch">
+      Deutsch
+    </label>
+    <label for="dutch">
+      <input type="radio" id="dutch_language" name="language" value="Nederlands">
+      Nederlands
+    </label>
+    <label for="chinese">
+      <input type="radio" id="chinese_language_2" name="language" value="简体中文">
+      简体中文
+    </label>
+    <label for="chinese_traditional">
+      <input type="radio" id="chinese_traditional_language" name="language" value="繁體中文">
+      繁體中文
+    </label>
+    <label for="polish">
+      <input type="radio" id="polish_language" name="language" value="Polski">
+      Polski
+    </label>
+    <label for="greek">
+      <input type="radio" id="greek_language" name="language" value="Ελληνικά">
+      Ελληνικά
+    </label>
+    <label for="russian">
+      <input type="radio" id="russian_language" name="language" value="Русский">
+      Русский
+    </label>
+    <label for="turkish">
+      <input type="radio" id="turkish_language" name="language" value="Türkçe">
+      Türkçe
+    </label>
+    <label for="bulgarian">
+      <input type="radio" id="bulgarian_language" name="language" value="Български">
+      Български
+    </label>
+    <label for="arabic">
+      <input type="radio" id="arabic_language" name="language" value="العربية">
+      العربية
+    </label>
+    <!-- Add more language radio buttons as needed -->
+  </div>
+  
+
+
+
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+ var message = document.getElementById("message");
+
+
+ function checkFields() {
+   var location = document.getElementById("location").value;
+   var checkIn = document.getElementById("check-in").value;
+   var checkOut = document.getElementById("check-out").value;
+   var guests = document.getElementById("guests").value;
+
+   if (!location || !checkIn || !checkOut || !guests === "0") {
+     message.textContent = "Please fill out all required fields: location, check-in date, check-out date, and number of guests.";
+     message.style.display = "block";
+     return false;
+   }
+
+   message.style.display = "none"; 
+   return true;
+ }
+
+ document.getElementById("button").addEventListener("click", function() {
+   if (checkFields()) {
+  
+   
+   }
+ });
+});
+
+
+
+    // Get the button and toggle popup elements
+    const currencyButton = document.getElementById('currencyButton');
+    const togglePopup = document.getElementById('togglePopup');
+  
+    // Function to toggle the toggle popup
+    function toggleTogglePopup() {
+      togglePopup.style.display = togglePopup.style.display === 'none' ? 'block' : 'none';
+    }
+  
+    // Function to handle currency selection
+    function handleCurrencySelection() {
+      const selectedCurrency = this.value;
+      currencyButton.innerText = selectedCurrency;
+      // Remove selected class from all labels
+      document.querySelectorAll('.toggle-popup label').forEach(label => {
+        label.classList.remove('selected');
+      });
+      // Add selected class to the clicked label
+      this.parentNode.classList.add('selected');
+      toggleTogglePopup(); // Close the toggle popup after selection
+    }
+  
+    // Get all currency radio buttons
+    const currencyRadioButtons = document.querySelectorAll('input[name="currency"]');
+  
+    // Add event listener to each currency radio button
+    currencyRadioButtons.forEach(button => {
+      button.addEventListener('click', handleCurrencySelection);
+    });
+  
+    // Event listener for the currency button
+    currencyButton.addEventListener('click', toggleTogglePopup);
+
+
+    // Get the button and toggle popup elements
+  const languageSelectionButton = document.getElementById('languageSelectionButton');
+  const languageTogglePopup = document.getElementById('languageTogglePopup');
+
+  // Function to toggle the toggle popup
+  function toggleLanguageTogglePopup() {
+    languageTogglePopup.style.display = languageTogglePopup.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Function to handle language selection
+  function handleLanguageSelection() {
+    const selectedLanguage = this.value;
+    languageSelectionButton.innerText = selectedLanguage;
+    // Remove selected class from all labels
+    document.querySelectorAll('.language-toggle-popup label').forEach(label => {
+      label.classList.remove('language-selected');
+    });
+    // Add selected class to the clicked label
+    this.parentNode.classList.add('language-selected');
+    toggleLanguageTogglePopup(); // Close the toggle popup after selection
+  }
+
+  // Get all language radio buttons
+  const languageRadioButtons = document.querySelectorAll('input[name="language"]');
+
+  // Add event listener to each language radio button
+  languageRadioButtons.forEach(button => {
+    button.addEventListener('click', handleLanguageSelection);
+  });
+
+  // Event listener for the language button
+  languageSelectionButton.addEventListener('click', toggleLanguageTogglePopup);
+
+
+
+
+  
+
+</script>
