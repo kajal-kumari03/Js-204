@@ -431,7 +431,7 @@
    var checkOut = document.getElementById("check-out").value;
    var guests = document.getElementById("guests").value;
 
-   if (!location || !checkIn || !checkOut || guests === "0") {
+   if (!location || !checkIn || !checkOut || !guests === "0") {
      message.textContent = "Please fill out all required fields: location, check-in date, check-out date, and number of guests.";
      message.style.display = "block";
      return false;
@@ -517,4 +517,10 @@
 
   // Event listener for the language button
   languageSelectionButton.addEventListener('click', toggleLanguageTogglePopup);
+
+
+
+
+  
+
 </script>
