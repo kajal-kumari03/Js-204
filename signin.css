@@ -171,8 +171,8 @@ hr {
 }
 
 .nav >div img {
-    width: 28px;
-    height: auto;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     margin-left: 30px;
     border-radius: 50%;
@@ -334,8 +334,8 @@ display: none;
 
 
     #languageSelectionButton img{
-        margin-top: 8px;
-        margin-left: -1px;
+        margin-top: 2px;
+        margin-left: -3px;
     }
     #languageSelectionButton::after {
         content: attr(data-tooltip); /* Tooltip content */

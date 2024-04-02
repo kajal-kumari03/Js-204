@@ -89,6 +89,7 @@ function validateEmail() {
   
   if (!emailPattern.test(emailInput)) {
     document.getElementById('error-message').style.display = 'block';
+    return; // Exit the function if email format is incorrect
   } else {
     document.getElementById('error-message').style.display = 'none';
     // Proceed to the password page only if the email is valid
@@ -98,7 +99,15 @@ function validateEmail() {
 
 
 
-
+function validateEmailAndContinue() {
+  var isValidEmail = validateEmail();
+  if (isValidEmail) {
+    continueToPassword();
+  } else {
+      // Display error message or handle invalid email condition as needed
+      console.log("Invalid email address");
+  }
+}
 
 
 

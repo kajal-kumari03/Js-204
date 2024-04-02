@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in/Register</title>
     <link rel="stylesheet" href="signin.css">
 </head>
+
 <body>
     <header class="nav">
         <img src="/logo.png" alt="Logo" id="logo" />
         <div>
-            <!-- <a class="language" href="">
-                <img id="lang" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAZnbR58K9PMytSDb_mMQbLpEBI3oXfyy8Tw&usqp=CAU"
-                    alt="">
-            </a> -->
-            <button id="languageSelectionButton"  data-tooltip="Select your language"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-FwODtlt4e_d0r-5WtZzFRfkgGH3JQqfaA&usqp=CAU" alt=""></button>
-            <a  class="ask" href="">
+            <button id="languageSelectionButton" data-tooltip="Select your language"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-FwODtlt4e_d0r-5WtZzFRfkgGH3JQqfaA&usqp=CAU"
+                    alt=""></button>
+            <a class="ask" href="">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBk1nSE_xj3IuZ4dxOJtBE8Onna5GLOMh-WQ&usqp=CAU"
                     alt="">
             </a>
@@ -25,9 +25,10 @@
         <div class="sign-in">
             <h2>Sign in or create an account</h2>
             <label for="email">Email address</label>
-            <input id="email" type="email" placeholder="Enter your email address">
-            <button class="continue" onclick="continueToPassword()">Continue with email</button>
+            <input id="email" type="email" placeholder="Enter your email address" required>
+            <button class="continue" onclick=" validateEmailAndContinue();">Continue with email</button>
             <div id="error-message" style="display: none;">Incorrect email format!</div>
+
             <div class="horizontal-line">
                 <p>or use one of these options</p>
             </div>
@@ -70,79 +71,80 @@
     <div id="languageTogglePopup" class="language-toggle-popup">
         <h2>Suggested for you</h2>
         <label for="english_uk">
-          <input type="radio" id="english_uk_language" name="language" value="English (UK)">
-          English (UK)
+            <input type="radio" id="english_uk_language" name="language" value="English (UK)">
+            English (UK)
         </label>
         <label for="hindi">
-          <input type="radio" id="hindi_language" name="language" value="हिन्दी">
-          हिन्दी
+            <input type="radio" id="hindi_language" name="language" value="हिन्दी">
+            हिन्दी
         </label>
         <label for="french">
-          <input type="radio" id="french_language" name="language" value="Français">
-          Français
+            <input type="radio" id="french_language" name="language" value="Français">
+            Français
         </label>
         <label for="chinese">
-          <input type="radio" id="chinese_language" name="language" value="简体中文">
-          简体中文
+            <input type="radio" id="chinese_language" name="language" value="简体中文">
+            简体中文
         </label>
-      
+
         <h2>All languages</h2>
         <label for="english_us">
-          <input type="radio" id="english_us_language" name="language" value="English (US)">
-          English (US)
+            <input type="radio" id="english_us_language" name="language" value="English (US)">
+            English (US)
         </label>
         <label for="english_uk">
-          <input type="radio" id="english_uk_language_2" name="language" value="English (UK)">
-          English (UK)
+            <input type="radio" id="english_uk_language_2" name="language" value="English (UK)">
+            English (UK)
         </label>
         <label for="hindi">
-          <input type="radio" id="hindi_language_2" name="language" value="हिन्दी">
-          हिन्दी
+            <input type="radio" id="hindi_language_2" name="language" value="हिन्दी">
+            हिन्दी
         </label>
         <label for="german">
-          <input type="radio" id="german_language" name="language" value="Deutsch">
-          Deutsch
+            <input type="radio" id="german_language" name="language" value="Deutsch">
+            Deutsch
         </label>
         <label for="dutch">
-          <input type="radio" id="dutch_language" name="language" value="Nederlands">
-          Nederlands
+            <input type="radio" id="dutch_language" name="language" value="Nederlands">
+            Nederlands
         </label>
         <label for="chinese">
-          <input type="radio" id="chinese_language_2" name="language" value="简体中文">
-          简体中文
+            <input type="radio" id="chinese_language_2" name="language" value="简体中文">
+            简体中文
         </label>
         <label for="chinese_traditional">
-          <input type="radio" id="chinese_traditional_language" name="language" value="繁體中文">
-          繁體中文
+            <input type="radio" id="chinese_traditional_language" name="language" value="繁體中文">
+            繁體中文
         </label>
         <label for="polish">
-          <input type="radio" id="polish_language" name="language" value="Polski">
-          Polski
+            <input type="radio" id="polish_language" name="language" value="Polski">
+            Polski
         </label>
         <label for="greek">
-          <input type="radio" id="greek_language" name="language" value="Ελληνικά">
-          Ελληνικά
+            <input type="radio" id="greek_language" name="language" value="Ελληνικά">
+            Ελληνικά
         </label>
         <label for="russian">
-          <input type="radio" id="russian_language" name="language" value="Русский">
-          Русский
+            <input type="radio" id="russian_language" name="language" value="Русский">
+            Русский
         </label>
         <label for="turkish">
-          <input type="radio" id="turkish_language" name="language" value="Türkçe">
-          Türkçe
+            <input type="radio" id="turkish_language" name="language" value="Türkçe">
+            Türkçe
         </label>
         <label for="bulgarian">
-          <input type="radio" id="bulgarian_language" name="language" value="Български">
-          Български
+            <input type="radio" id="bulgarian_language" name="language" value="Български">
+            Български
         </label>
         <label for="arabic">
-          <input type="radio" id="arabic_language" name="language" value="العربية">
-          العربية
+            <input type="radio" id="arabic_language" name="language" value="العربية">
+            العربية
         </label>
         <!-- Add more language radio buttons as needed -->
-      </div>
-      
+    </div>
+
 
     <script src="signin.js"></script>
 </body>
+
 </html>
