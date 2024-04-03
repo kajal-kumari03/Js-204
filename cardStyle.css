@@ -11,7 +11,352 @@ body {
   margin-right: auto;
   margin-top: 3rem;
 }
+/*kajal code started  */
+#fir {
+  background-color: #0a43ae;
+}
 
+header {
+  width: 80%;
+  margin-left: 20%;
+  height: 60vh;
+}
+
+.header-container {
+  margin-top: -25px;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+
+  width: 80%;
+
+}
+
+#mid>a img {
+  color: rgb(230, 219, 219);
+ 
+  color: #007bff;
+  font-weight: bold;
+  flex: 0 0 150px;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#mid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+#regis{
+   color: rgb(69, 86, 211); border: 1px solid rgb(27, 69, 183);background-color: #edeef3;border-radius: 5px;margin-right:10px ;
+   text-align: center;justify-content: center;font-weight: 900;font-size: 300;width: 80px;height: 40px;cursor: pointer;text-decoration: none;
+}
+#signs{
+  color: rgb(69, 86, 211);border: 1px solid rgb(27, 69, 183);background-color:  #edeff4;width: 80px;height: 40px;
+ border-radius: 5px;text-align: center;justify-content: center;font-weight: 900;font-size: 300;cursor: pointer;text-decoration: none;
+}
+#regis:hover{
+  background-color: #3d6bf8;
+}
+#signs:hover{
+  background-color: #3d6bf8;
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-left: -42px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -60px;
+  max-width: 1000px;
+  padding-top: 40px;
+}
+
+nav {
+  flex: 1;
+  margin-top: 20px;
+
+}
+
+nav ul {
+  list-style: none;
+  margin-left: -20px;
+
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  color: white;
+}
+
+nav li:hover {
+  color: #74a9cd;
+  border: 1px solid rgb(188, 222, 234);
+  border-radius: 10px;
+  
+}
+
+
+.search-bar {
+  margin-top: -30px;
+  position: relative;
+  display: flex;
+
+}
+
+#main {
+  width: 80%;
+  margin-left: 20%;
+
+}
+
+#location,
+#check-in,
+#check-out {
+  height: 30px;
+}
+
+
+.location label,
+.date-range label,
+.guests label
+{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.location input[type="text"] {
+
+  padding: 10px;
+  border: 4px solid rgb(205, 205, 3);
+  border-radius: 1px solid #ccc;
+}
+
+.date-range input[type="date"] {
+  padding: 10px;
+  border: 4px solid rgb(205, 205, 3);
+  border-radius: 1px solid #ccc;
+}
+
+.guests {
+  display: flex;
+}
+
+.guests select {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding: 10px;
+  border: 4px solid rgb(205, 205, 3);
+  border-radius: 1px solid #ccc;
+}
+
+.guests select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+}
+
+
+
+.search-button button {
+  background-color: #3d6bf8 ;
+  color: #fff;
+ width:100px;
+ height:58px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 4px solid rgb(205, 205, 3);
+}
+
+.accommodation-type input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  justify-content: center;
+  margin-top: 60px;
+  color: white;
+}
+
+.box img {
+  width: 500px;
+  height: 500px;
+
+}
+
+.btn {
+
+  background-color: #3d6bf8 ;
+  color:white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* transition: background-color 0.3s ease; */
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #072ea3;
+}
+
+#currencyButton{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+#languageSelectionButton{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.toggle-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 90%; /* Increased width for better alignment */
+  max-width: 800px; /* Adjust as needed */
+  max-height: 70%; /* Limiting maximum height to make it scrollable */
+  overflow-y: auto; /* Adding vertical scrollbar if needed */
+}
+.toggle-popup label {
+  display: inline-block;
+  width: calc(25% - 20px); /* Four labels in a row with a small gap between them */
+  height: 50px; /* Set the height of each label */
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.toggle-popup label:hover {
+  background-color: #f0f0f0;
+}
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.language-toggle-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.language-toggle-popup label {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  width: calc(25% - 10px); /* Adjust as needed */
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.language-toggle-popup label:hover {
+  background-color: #f0f0f0;
+}
+.language-selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+#currencyButton::after {
+  content: "Select your currency"; /* Tooltip content */
+  position: relative;
+  top: calc(80% + 5px); /* Position below the link */
+  left: 5%; /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevent the tooltip from blocking clicks */
+  white-space: nowrap;
+  }
+  
+  #currencyButton:hover::after {
+  opacity: 1; /* Show tooltip on hover */
+  }
+  #languageSelectionButton img{
+      margin-top: 8px;
+  }
+  #languageSelectionButton::after {
+      content: attr(data-tooltip); /* Tooltip content */
+      position: relative;
+      top: calc( 15px); /* Position below the button */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%);
+      background-color: black;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none; /* Prevent the tooltip from blocking clicks */
+      white-space: nowrap;
+  }
+  
+  #languageSelectionButton:hover::after {
+      opacity: 1; /* Show tooltip on hover */
+  }
+
+/*kajal code ended  */
+
+/*junaid code started  */
 #card_box,
 #card_box1,
 #card_box2,
@@ -175,3 +520,4 @@ body {
   border-bottom: 2px solid;
   border-radius: 10px;
 }
+/*junaid code ended  */
