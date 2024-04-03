@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Language Selection</title>
+<style>
+  /* Styles for the toggle popup */
+  .toggle-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .toggle-popup label {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    width: calc(25% - 10px); /* Adjust as needed */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .toggle-popup label:hover {
+    background-color: #f0f0f0;
+  }
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<button id="languageButton">Select Language</button>
+
+<!-- Toggle popup for language selection -->
+<div id="togglePopup" class="toggle-popup">
+  <h2>Suggested for you</h2>
+  <label for="english_uk">
+    <input type="radio" id="english_uk" name="language" value="English (UK)">
+    English (UK)
+  </label>
+  <label for="hindi">
+    <input type="radio" id="hindi" name="language" value="हिन्दी">
+    हिन्दी
+  </label>
+  <label for="french">
+    <input type="radio" id="french" name="language" value="Français">
+    Français
+  </label>
+  <label for="chinese">
+    <input type="radio" id="chinese" name="language" value="简体中文">
+    简体中文
+  </label>
+
+  <h2>All languages</h2>
+  <label for="english_us">
+    <input type="radio" id="english_us" name="language" value="English (US)">
+    English (US)
+  </label>
+  <label for="english_uk">
+    <input type="radio" id="english_uk" name="language" value="English (UK)">
+    English (UK)
+  </label>
+  <label for="hindi">
+    <input type="radio" id="hindi" name="language" value="हिन्दी">
+    हिन्दी
+  </label>
+  <label for="german">
+    <input type="radio" id="german" name="language" value="Deutsch">
+    Deutsch
+  </label>
+  <label for="dutch">
+    <input type="radio" id="dutch" name="language" value="Nederlands">
+    Nederlands
+  </label>
+  <label for="chinese">
+    <input type="radio" id="chinese" name="language" value="简体中文">
+    简体中文
+  </label>
+  <label for="chinese_traditional">
+    <input type="radio" id="chinese_traditional" name="language" value="繁體中文">
+    繁體中文
+  </label>
+  <label for="polish">
+    <input type="radio" id="polish" name="language" value="Polski">
+    Polski
+  </label>
+  <label for="greek">
+    <input type="radio" id="greek" name="language" value="Ελληνικά">
+    Ελληνικά
+  </label>
+  <label for="russian">
+    <input type="radio" id="russian" name="language" value="Русский">
+    Русский
+  </label>
+  <label for="turkish">
+    <input type="radio" id="turkish" name="language" value="Türkçe">
+    Türkçe
+  </label>
+  <label for="bulgarian">
+    <input type="radio" id="bulgarian" name="language" value="Български">
+    Български
+  </label>
+  <label for="arabic">
+    <input type="radio" id="arabic" name="language" value="العربية">
+    العربية
+  </label>
+  <!-- Add more language radio buttons as needed -->
+</div>
+
+<script>
+  // Get the button and toggle popup elements
+  const languageButton = document.getElementById('languageButton');
+  const togglePopup = document.getElementById('togglePopup');
+
+  // Function to toggle the toggle popup
+  function toggleTogglePopup() {
+    togglePopup.style.display = togglePopup.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Function to handle language selection
+  function handleLanguageSelection() {
+    const selectedLanguage = this.value;
+    languageButton.innerText = selectedLanguage;
+    // Remove selected class from all labels
+    document.querySelectorAll('.toggle-popup label').forEach(label => {
+      label.classList.remove('selected');
+    });
+    // Add selected class to the clicked label
+    this.parentNode.classList.add('selected');
+    toggleTogglePopup(); // Close the toggle popup after selection
+  }
+
+  // Get all language radio buttons
+  const languageRadioButtons = document.querySelectorAll('input[name="language"]');
+
+  // Add event listener to each language radio button
+  languageRadioButtons.forEach(button => {
+    button.addEventListener('click', handleLanguageSelection);
+  });
+
+  // Event listener for the language button
+  languageButton.addEventListener('click', toggleTogglePopup);
+</script>
+
+</body>
+</html>
