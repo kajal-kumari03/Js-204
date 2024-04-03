@@ -22,3 +22,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const cartWidth = document.querySelector('.cart').offsetWidth;
+    const numCarts = slider.children.length;
+    const frameWidth = document.querySelector('.slider-frame').offsetWidth;
+    let currentPosition = 0;
+  
+    const numVisibleCarts = 2; // Number of carts visible at a time
+    const visibleCartsWidth = numVisibleCarts * cartWidth +100;
+  
+    prevBtn.addEventListener('click', function() {
+      currentPosition += cartWidth;
+      currentPosition = Math.min(currentPosition, 0);
+      slider.style.transform = `translateX(${currentPosition}px)`;
+    });
+  
+    nextBtn.addEventListener('click', function() {
+      currentPosition -= cartWidth;
+      const maxPosition = -(numCarts - numVisibleCarts) * cartWidth;
+      currentPosition = Math.max(currentPosition, maxPosition);
+      slider.style.transform = `translateX(${currentPosition}px)`;
+    });
+  });
+  

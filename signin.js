@@ -75,3 +75,6 @@ languageRadioButtons.forEach(button => {
 
 // Event listener for the language button
 document.getElementById('languageSelectionButton').addEventListener('click', toggleLanguageTogglePopup);
+
+
+

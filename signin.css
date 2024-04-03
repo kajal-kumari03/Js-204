@@ -357,3 +357,5 @@ display: none;
     #languageSelectionButton:hover::after {
         opacity: 1; /* Show tooltip on hover */
     }
+
+

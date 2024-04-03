@@ -9,7 +9,7 @@ img {
 }
 
 form {
-    max-width: 80%;
+    max-width: 77%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -56,7 +56,7 @@ h2 {
 
 #container {
     display: flex;
-    width: 83%;
+    width: 80%;
     margin: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -124,7 +124,7 @@ h2 {
 }
 
 .foot {
-    width: 83%;
+    width: 80%;
     margin: auto;
 }
 
@@ -192,3 +192,85 @@ h2 {
         text-decoration: underline;
     }
 }
+
+
+
+
+.slider-frame {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    overflow: hidden;
+    height: 150px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .cart {
+    padding: 0 15px;
+    display: flex;
+    flex: 0 0 auto;
+    width: 47%; /* Adjust as needed */
+    height: 145px; /* Adjust as needed */
+    background-color: #fff;
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   color: #fff;
+    background-size: cover;
+  }
+  .cart1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkXLUTF3J4R94vMAzMmuOy1iTySK-yzJpVdQ&s");
+  }
+  .cart2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5HWSaN-MSI22ywZk7-q9JNeXydzuLfUZsg&s");
+  }
+  .cart3 {
+    background-image: url("https://q-xx.bstatic.com/xdata/images/xphoto/714x300/316455553.jpeg?k=33c0362560b6aa7ff9ba2afc3ef8d120728107cf56cd1c006fcf0da8c1821735&o=");
+  }
+  .car4{
+    background-image: url("https://q-xx.bstatic.com/xdata/images/xphoto/714x300/320847389.jpeg?k=29fd51bce8b4613b546dd479a46ccc85ee5e93b33d525104c666e075364b11de&o=");
+  }
+  .btn-sr{
+    background-color:  #007bff;
+    color: #fff;
+    height: 35px;
+   border-radius: 4px;
+    font-weight: bold;
+    border: none;
+  }
+  .btn-sr:hover{
+    background-color:  #0a43ae;
+  }
+ 
+  .cart img{
+    padding-left: 2px;
+    width: 120px;
+    height: 120px;
+    padding-top: 10px;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .slider-btn:hover{
+    background-color: #ccc;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
