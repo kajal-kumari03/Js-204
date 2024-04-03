@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking.com</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #fir {
+        background-color: #0a43ae;
+      }
+
+      header {
+        width: 90%;
+        margin-left: 10%;
+        height: 30vh;
+      }
+
+      .header-container {
+        padding: 10px;
+        width: 80%;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        width: 80%;
+      }
+
+      #mid > a img {
+        color: rgb(230, 219, 219);
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        flex: 0 0 150px;
+        text-align: right;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+
+      #mid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+
+      .logo img {
+        width: 180px;
+        height: 40px;
+        margin-left: -42px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -60px;
+        max-width: 1000px;
+        padding-top: 60px;
+      }
+
+      nav {
+        flex: 1;
+        margin-top: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin-left: -20px;
+
+        margin: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        color: white;
+      }
+
+      nav a:hover {
+        color: #000;
+      }
+
+      .search-bar {
+        /* margin-top: -30px; */
+        position: relative;
+        display: flex;
+        width: 300px;
+        /* margin :auto; */
+      }
+
+      #main {
+        width: 90%;
+        margin-left: 10%;
+      }
+
+      #location,
+      #check-in,
+      #check-out {
+        width: 200px;
+        height: 30px;
+      }
+
+      .location label,
+      .date-range label,
+      .guests label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .location input[type="text"] {
+        padding: 3px;
+        border: 4px solid rgb(205, 205, 3);
+        border-radius: 1px solid #ccc;
+      }
+
+      .date-range input[type="date"] {
+        padding: 3px;
+        border: 4px solid rgb(205, 205, 3);
+        border-radius: 1px solid #ccc;
+      }
+
+      .guests {
+        display: flex;
+      }
+
+      .guests select {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* padding: 5px; */
+        border: 4px solid rgb(205, 205, 3);
+        border-radius: 1px solid #ccc;
+      }
+
+      .guests select {
+        appearance: none;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+      }
+
+      .search-button {
+        flex: 0 0 150px;
+      }
+
+      .search-button button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .box img {
+        width: 500px;
+        height: 500px;
+      }
+
+      .btn {
+        background-color: #ffffff;
+        color: #3d6bf8;
+        /* padding: 10px 20px; */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #f2f2f2;
+      }
+      #button {
+        padding: 11px;
+        font-size: 19px;
+        color: white;
+      }
+      .first {
+        width: 80%;
+        margin-left: 10%;
+
+        height: 350px;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        padding: 20px;
+        width: 400px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: large;
+      }
+      .firButtons {
+        padding: 20px;
+        width: 160px;
+        border-radius: 5px;
+        margin: 4px;
+
+        background-color: blueviolet;
+        color: white;
+        font-size: large;
+      }
+      .second {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #secButton {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        width: 250px;
+        border: 1px solid white;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 15px;
+      }
+      .sec1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+      .sec1 a {
+        color: white;
+      }
+      .third {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 5px;
+        padding-top: 10px;
+      }
+      .third .a {
+        text-align: center;
+        flex: 1;
+      }
+      .third .a a {
+        color: blueviolet;
+        text-decoration: none;
+      }
+      .line {
+        width: 90%;
+        height: 1px;
+        background-color: white;
+        margin: 10px 0;
+      }
+      .aa {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .four {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+      img {
+        margin: 10px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fir">
+      <header>
+        <div class="header-container">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              justify-content: space-around;
+              align-items: center;
+              margin-top: 20px;
+              gap: 40px;
+            "
+          >
+            <div
+              class="logo"
+              style="font-size: 25px; color: white; font-weight: bold"
+            >
+              Booking.com
+            </div>
+            <div id="mid">
+              <a href="#" style="color: white">INR</a>
+              <img
+                src="https://tse4.mm.bing.net/th?id=OIP._BpEyvpqaz9IUZrhyyGdbAHaE7&pid=Api&P=0&h=180"
+                alt="imge"
+              />
+              <i class="fa-thin fa-circle-question"></i>
+              <a
+                href="#"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  width: 160px;
+                  margin-left: -60px;
+                "
+                >List your property</a
+              >
+              <!-- </div>
+        
+        <div class="sign-in"> -->
+              <a
+                href="./sign-in.html"
+                style="
+                  border: 1px solid white;
+                  background-color: white;
+                  border-radius: 5px;
+                  height: 30px;
+                  text-decoration: none;
+                  text-align: center;
+                  align-content: center;
+                  color: #000;
+                "
+                >Register</a
+              >
+              <a
+                href="./sign-in.html"
+                style="
+                  border: 1px solid white;
+                  background-color: white;
+                  height: 30px;
+                  border-radius: 5px;
+                  text-decoration: none;
+                  text-align: center;
+                  align-content: center;
+                  margin-left: 20px;
+                  color: black;
+                "
+                >Sign in</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <nav>
+            <ul>
+              <li style="font-size: larger">
+                <a href="./index.html">Stays</a>
+              </li>
+              <li style="font-size: larger">
+                <a href="./flight.html">Flights</a>
+              </li>
+              <li style="font-size: larger"><a href="#">Flight + Hotel</a></li>
+              <li style="font-size: larger"><a href="#">Car rentals</a></li>
+              <li style="font-size: larger"><a href="#">Attractions</a></li>
+              <li style="font-size: larger"><a href="#">Airport taxis</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div id="main">
+      <div class="search-bar">
+        <div class="location">
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="select your place"
+          />
+        </div>
+        <div
+          class="date-range"
+          style="display: flex; flex-direction: row; width: auto"
+        >
+          <div>
+            <input
+              type="date"
+              id="check-in"
+              name="check-in"
+              value="2024-03-27"
+              style="border-right: none"
+            />
+          </div>
+          <div>
+            <input
+              type="date"
+              id="check-out"
+              name="check-out"
+              value="2024-03-30"
+              style="border-left: none"
+            />
+          </div>
+        </div>
+        <div class="guests">
+          <select name="guests" id="guests" style="border-right: none">
+            <option value="1">1 adult</option>
+            <option value="2">2 adults</option>
+            <option value="3">3 adults</option>
+            <option value="4">4 adults</option>
+            <option value="other">More than 4 adults</option>
+          </select>
+          <select
+            name="children"
+            id="children"
+            style="border-left: none; border-right: none"
+          >
+            <option value="0">0 children</option>
+            <option value="1">1 child</option>
+            <option value="2">2 children</option>
+            <option value="3">3 children</option>
+            <option value="other">More than 3 children</option>
+          </select>
+          <select name="rooms" id="rooms" style="border-left: none">
+            <option value="1">1 room</option>
+            <option value="2">2 rooms</option>
+            <option value="3">3 rooms</option>
+            <option value="other">More than 3 rooms</option>
+          </select>
+        </div>
+        <div class="search-button">
+          <button type="submit" id="button">
+            <a href="./confirm.html" style="color: white; text-decoration: none; padding: 0 24px;" >Search</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: rgb(0, 34, 79)">
+      <div class="first">
+        <h1>Save time, save money!</h1>
+        <p>Sign up and we'll send the best deals to you</p>
+        <span
+          ><input type="text" placeholder="Your email address ." /><button
+            class="firButtons"
+          >
+            Subscribe
+          </button></span
+        >
+      </div>
+    </div>
+
+    <div style="background-color: blueviolet">
+      <div style="background-color: blueviolet">
+        <div style="width: 80%; margin-left: 10%">
+          <div class="second">
+            <button id="secButton">List your property</button>
+            <div class="line"></div>
+            <div class="sec1">
+              <a href="#" style="text-decoration: none;">Mobile version</a>
+              <a href="http://127.0.0.1:5500/second.html" style="text-decoration: none;">Your account</a>
+              <a href="#" style="text-decoration: none;">Make changes online to your booking</a>
+              <a href="#" style="text-decoration: none;">Customer Service Help</a>
+              <a href="#" style="text-decoration: none;">Become an affiliate</a>
+              <a href="#" style="text-decoration: none;">Booking.com for business</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="third">
+        <div class="a">
+          <a href="#">Countries</a><br /><br />
+          <a href="#">Region</a><br /><br />
+          <a href="#">Cities</a><br /><br />
+          <a href="#">District</a><br /><br />
+          <a href="#">Airports</a><br /><br />
+          <a href="#">Hotels</a><br /><br />
+          <a href="#">Places of interest</a><br />
+        </div>
+        <div class="a">
+          <a href="#">Home</a><br /><br />
+          <a href="#">Apartments</a><br /><br />
+          <a href="#">Resorts</a><br /><br />
+          <a href="#">Villas</a><br /><br />
+          <a href="#">Hostels</a><br /><br />
+          <a href="#">B&Bs</a><br /><br />
+          <a href="#">Guest houses</a><br />
+        </div>
+        <div class="a">
+          <a href="#">Unique places to stay</a><br /><br />
+          <a href="#">All destinations</a><br /><br />
+          <a href="#">All flight destinations</a><br /><br />
+          <a href="#">All car rental locations</a><br /><br />
+          <a href="#">All vacation destinations</a><br /><br />
+          <a href="#">Reviews</a><br /><br />
+          <a href="#">Discover monthly stays</a><br /><br />
+          <a href="#">Unpacked: Travel articles</a><br /><br />
+          <a href="#">Seasonal and holiday deals</a><br /><br />
+          <a href="#">Traveller Review Awards</a>
+        </div>
+        <div class="a">
+          <a href="#">Car rental</a><br /><br />
+          <a href="#">Flight finder</a><br /><br />
+          <a href="#">Restaurant reservations</a><br /><br />
+          <a href="#">Booking.com for Travel Agents</a><br />
+        </div>
+        <div class="a">
+          <a href="#">Countries</a><br /><br />
+          <a href="#">Coronavirus (COVID-19) FAQs</a><br /><br />
+          <a href="#">Customer Service Help</a><br /><br />
+          <a href="#">Partner help</a><br /><br />
+          <a href="#">Careers</a><br /><br />
+          <a href="#">Sustainability</a><br /><br />
+          <a href="#">Press Center</a><br /><br />
+          <a href="#">Safety Resource Center</a><br /><br />
+          <a href="#">Investor relations</a><br /><br />
+          <a href="#">Teams &amp; Conditions</a><br /><br />
+          <a href="#">Partner dispute</a><br /><br />
+          <a href="#">How We Work</a><br /><br />
+          <a href="#">Privacy &amp; cookie statement</a><br /><br />
+          <a href="#">MSA statement</a><br /><br />
+          <a href="#">Corporate contact</a><br /><br />
+          <a href="#">content guidelines and reporting</a><br />
+        </div>
+      </div>
+
+      <div class="aa">
+        <a href="http://127.0.0.1:5500/firsts.html">Extranet Log-in</a>
+      </div>
+      <p style="margin-left: 100px">
+        Copyright © 1996–2024 Booking.com™. All rights reserved.
+      </p>
+      <p style="text-align: center">
+        Booking.com is part of Booking Holdings Inc., the world leader in online
+        travel and related services.
+      </p>
+      <div class="four">
+        <img
+          src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+          alt=""
+        />
+        <img
+          src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+          alt=""
+        />
+        <img
+          src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+          alt=""
+        />
+        <img
+          src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+          alt=""
+        />
+        <img
+          src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var emailInput = document.querySelector('input[type="text"]');
+    var subscribeButton = document.querySelector(".firButtons");
+
+    subscribeButton.addEventListener("click", function () {
+      var email = emailInput.value;
+
+      if (email.trim() !== "") {
+        var thankYouMessage = document.createElement("p");
+        thankYouMessage.textContent = "Thank you for subscribing!";
+
+        emailInput.parentNode.insertBefore(
+          thankYouMessage,
+          emailInput.nextSibling
+        );
+
+        emailInput.value = "";
+
+        setTimeout(function () {
+          emailInput.style.display = "none";
+          subscribeButton.style.display = "none";
+          thankYouMessage.style.display = "none";
+        }, 1000);
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    });
+  });
+</script>
