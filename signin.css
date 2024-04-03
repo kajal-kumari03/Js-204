@@ -1,0 +1,304 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+justify-content: center; */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    width: 30%;
+    margin: auto;
+}
+.sign-in {
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+.sign-in h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: large;
+    margin-bottom: 30px;
+}
+.sign-in p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: small;
+}
+.sign-in a {
+    text-decoration: none;
+}
+label {
+    font-weight: bold;
+    font-size: small;
+}
+input[type="email"] {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="email"]::placeholder {
+    padding-left: 10px;
+}
+button.continue {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: medium;
+}
+button.continue:hover {
+    background-color: #0056b3;
+}
+.horizontal-line {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 0;
+}
+.horizontal-line p {
+    display: inline;
+    background-color: #fff;
+    padding: 0 20px;
+    font-size: small;
+}
+.horizontal-line::before,
+.horizontal-line::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.horizontal-line::before {
+    content: none;
+}
+.link {
+    text-align: center;
+    display: flex;
+    width: 80%;
+    margin: 40px;
+    gap: 20px;
+}
+.facebook,
+.google,
+.apple {
+    width: 100px;
+    height: 70px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.facebook img,
+.google img {
+    width: 35px;
+    height: auto;
+    margin-top: 20px;
+}
+.apple img {
+    width: 90px;
+    height: auto;
+}
+.facebook:hover img,
+.google:hover img,
+.apple:hover img {
+    transform: scale(1.1);
+}
+hr {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+.footer {
+    text-align: center;
+}
+.footer p {
+    font-size: 12px;
+    color: black;
+    font-size: small;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 0%;
+    background-color: #014792;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.nav>img {
+    width: 50px;
+    height: auto;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.nav >div img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+.nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+}
+.nav div a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.nav div a:hover {
+    transform: scale(1.1);
+}
+.nav div a {
+position: relative; /* Position context for the tooltip */
+}
+#lang{
+height: 30px;
+width: 30px;
+}
+.language::after {
+content: "Select your language"; /* Tooltip content */
+position: absolute;
+top: calc(100% + 5px); /* Position below the link */
+left: 50%; /* Center horizontally */
+transform: translateX(-50%);
+background-color: black;
+color: #fff;
+padding: 5px;
+border-radius: 5px;
+font-size: 12px;
+opacity: 0;
+transition: opacity 0.3s ease;
+pointer-events: none; /* Prevent the tooltip from blocking clicks */
+white-space: nowrap;
+}
+.language:hover::after {
+opacity: 1; /* Show tooltip on hover */
+}
+.ask::after {
+content: "Help & Support"; /* Tooltip content */
+position: absolute;
+top: calc(100% + 5px); /* Position below the link */
+left: 50%; /* Center horizontally */
+transform: translateX(-50%);
+background-color: black;
+color: #fff;
+padding: 5px;
+border-radius: 5px;
+font-size: 12px;
+opacity: 0;
+transition: opacity 0.3s ease;
+pointer-events: none; /* Prevent the tooltip from blocking clicks */
+white-space: nowrap;
+}
+.ask:hover::after {
+opacity: 1; /* Show tooltip on hover */
+}
+#error-message {
+color: red;
+display: none;
+}
+#languageSelectionButton{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .toggle-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 90%; /* Increased width for better alignment */
+    max-width: 800px; /* Adjust as needed */
+    max-height: 70%; /* Limiting maximum height to make it scrollable */
+    overflow-y: auto; /* Adding vertical scrollbar if needed */
+  }
+  .toggle-popup label {
+    display: inline-block;
+    width: calc(25% - 20px); /* Four labels in a row with a small gap between them */
+    height: 50px; /* Set the height of each label */
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .toggle-popup label:hover {
+    background-color: #f0f0f0;
+  }
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .language-toggle-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .language-toggle-popup label {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    width: calc(25% - 10px); /* Adjust as needed */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .language-toggle-popup label:hover {
+    background-color: #f0f0f0;
+  }
+  .language-selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+    #languageSelectionButton img{
+        margin-top: 2px;
+        margin-left: -3px;
+    }
+    #languageSelectionButton::after {
+        content: attr(data-tooltip); /* Tooltip content */
+        position: relative;
+        top: calc( 15px); /* Position below the button */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%);
+        background-color: black;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none; /* Prevent the tooltip from blocking clicks */
+        white-space: nowrap;
+    }
+
+    #languageSelectionButton:hover::after {
+        opacity: 1; /* Show tooltip on hover */
+    }

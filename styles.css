@@ -1,0 +1,288 @@
+/* Basic CSS for styling the form */
+body {
+    font-family: Arial, sans-serif;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    height: auto;
+}
+.form-1 {
+    width: 45%;
+}
+h2 {
+    margin-top: 10px;
+    font-weight: 800px;
+}
+p{
+    margin-top: 20px;
+}
+.signin-btn{
+    color: #007bff;
+    background-color: #fff;
+    border-color: #2e8bee;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    margin-top: 40px;
+}
+.register-btn{
+    color: #007bff;
+    border: 0px;
+    background-color: #fff;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+}
+.signin-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+.register-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+.signin-btn a {
+    color: #007bff;
+    background-color: #fff;
+    border-color: #2e8bee;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+}
+.register-btn a{
+    color: #007bff;
+    border: 0px;
+    background-color: #fff;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.signin-btn a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+.register-btn a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 300px;
+}
+#text-container {
+    margin-left: 13%;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #007bff;
+    height: 300px;
+    width: 1000px;
+    border-top-left-radius: 25% 50%;
+    border-top-right-radius: 25% 50%;
+    border-bottom-left-radius: 25% 50%;
+    border-bottom-right-radius: 25% 50%;
+    overflow: hidden;
+}
+.first-h2 {
+    margin-top: 70px;
+    color: #fff;
+}
+.second-h2 {
+    color: #fff;
+}
+#dynamic-text {
+    text-decoration: underline;
+    color: burlywood;
+}
+#button-container {
+    padding: 20px;
+}
+.discover {
+    padding: 10px 60px;
+    color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+.discover:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+#img-container>img {
+    width: 90%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+#img-container {
+    flex-grow: 1;
+}
+
+.foot {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.foot-h2 {
+    font-weight: 800;
+}
+.button-container button {
+    display: inline-block;
+    /* Display buttons in the same line */
+    margin: 0 10px;
+    /* Add margin between buttons */
+    padding: 10px;
+    /* Add padding to buttons */
+    border-radius: 20px;
+    /* Add border-radius to create rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    margin-top: 20px;
+}
+.btn1 {
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    width: 100px;
+}
+.btn2 {
+    background-color: #fff;
+    color: black;
+    border: none;
+    width: 100px;
+}
+.btn3 {
+    background-color: #fff;
+    color: black;
+    border: none;
+    width: 150px;
+}
+.btn2:hover {
+    background-color: #ccc;
+}
+.btn3:hover {
+    background-color: #ccc;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 columns */
+    grid-gap: 20px;
+    /* Gap between grid items */
+    margin-top: 20px;
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    >div a,p{
+        margin: 5px;
+        padding: 0%;
+    }
+}
+
+
+
+
+.slider-frame {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    overflow: hidden;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .cart {
+    padding: 0 15px;
+    display: flex;
+    flex: 0 0 auto;
+    width: 50%; /* Adjust as needed */
+    height: 145px; /* Adjust as needed */
+    background-color: #fff;
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   color: #fff;
+    background-size: cover;
+    padding-top: 30px;
+  }
+  .cart1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkXLUTF3J4R94vMAzMmuOy1iTySK-yzJpVdQ&s");
+  }
+  .cart2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5HWSaN-MSI22ywZk7-q9JNeXydzuLfUZsg&s");
+  }
+  .cart3 {
+    background-image: url("https://q-xx.bstatic.com/xdata/images/xphoto/714x300/316455553.jpeg?k=33c0362560b6aa7ff9ba2afc3ef8d120728107cf56cd1c006fcf0da8c1821735&o=");
+  }
+  .car4{
+    background-image: url("https://q-xx.bstatic.com/xdata/images/xphoto/714x300/320847389.jpeg?k=29fd51bce8b4613b546dd479a46ccc85ee5e93b33d525104c666e075364b11de&o=");
+  }
+  .btn-sr{
+    background-color:  #007bff;
+    color: #fff;
+    width: 150px;
+    height: 35px;
+   border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+  }
+  .btn-sr:hover{
+    background-color:  #0a43ae;
+  }
+
+  .cart img{
+    padding-left: 2px;
+    width: 120px;
+    height: 120px;
+    padding-top: 10px;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .slider-btn:hover{
+    background-color: #ccc;
+  }
+
+  .prev-btn {
+    left: 0;
+  }
+
+  .next-btn {
+    right: 0;
+  }
