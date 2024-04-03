@@ -8,23 +8,18 @@ img {
 }
 
 form {
-    max-width: 100%;
+    max-width: 77%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
-    height: auto;
 }
 .form-1 {
-    width: 45%;
+    width: 40%;
 }
 h2 {
-    margin-top: 10px;
     font-weight: 800px;
-}
-p{
-    margin-top: 20px;
 }
 .signin-btn{
     color: #007bff;
@@ -33,7 +28,6 @@ p{
     border-radius: 5px;
     width: 80px;
     height: 40px;
-    margin-top: 40px;
 }
 .register-btn{
     color: #007bff;
@@ -80,7 +74,7 @@ p{
 
 #container {
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -137,9 +131,8 @@ p{
 }
 
 .foot {
-    width: 100%;
+    width: 80%;
     margin: auto;
-    margin-top: 30px;
 }
 
 .foot-h2 {
@@ -156,7 +149,6 @@ p{
     /* Add border-radius to create rounded corners */
     cursor: pointer;
     /* Change cursor to pointer on hover */
-    margin-top: 20px;
 }
 .btn1 {
     color: #007bff;
@@ -186,7 +178,7 @@ p{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /* 5 columns */
-    grid-gap: 20px;
+    grid-gap: 10px;
     /* Gap between grid items */
     margin-top: 20px;
     a {
@@ -197,10 +189,6 @@ p{
     a:hover {
         text-decoration: underline;
     }
-    >div a,p{
-        margin: 5px;
-        padding: 0%;
-    }
 }
 
 
@@ -208,7 +196,7 @@ p{
 
 .slider-frame {
     position: relative;
-    width: 100%; /* Adjust as needed */
+    width: 80%; /* Adjust as needed */
     overflow: hidden;
     height: 150px;
     margin: 0 auto;
@@ -223,14 +211,13 @@ p{
     padding: 0 15px;
     display: flex;
     flex: 0 0 auto;
-    width: 50%; /* Adjust as needed */
+    width: 47%; /* Adjust as needed */
     height: 145px; /* Adjust as needed */
     background-color: #fff;
     margin: 0 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
    color: #fff;
     background-size: cover;
-    padding-top: 30px;
   }
   .cart1{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkXLUTF3J4R94vMAzMmuOy1iTySK-yzJpVdQ&s");
@@ -247,12 +234,10 @@ p{
   .btn-sr{
     background-color:  #007bff;
     color: #fff;
-    width: 150px;
     height: 35px;
    border-radius: 4px;
     font-weight: bold;
     border: none;
-    margin-top: 10px;
   }
   .btn-sr:hover{
     background-color:  #0a43ae;
