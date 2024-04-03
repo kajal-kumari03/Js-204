@@ -26,10 +26,21 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 ## Features
 List out the key features of your application.
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Search and Filtering: 
+- able to login 
+- cards are scrollable
 
 ## design decisions or assumptions
-List your design desissions & assumptions
+-Decision: Implement robust search and filtering functionality to allow users to find accommodations based on various criteria such as location, price, amenities, and user ratings.
+- Assumption:The search and filtering system will efficiently process user queries and provide accurate and relevant search results, enhancing usability and satisfaction.
+- Decision: Integrate real-time availability and pricing data from accommodation partners to ensure accurate and up-to-date information for users.
+-Assumption: The availability and pricing data will be reliable and consistent, allowing users to make bookings with confidence and reducing the risk of overbooking or pricing discrepancies.
 
+## Installation & Getting started
+Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+
+```bash
+npm install my-project
+cd my-project
+npm start
+```
