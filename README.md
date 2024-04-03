@@ -7,7 +7,7 @@ v addresses the problem of efficiently locating and booking accommodations by of
 Frontend: https://deployed-site.whatever
 Backend: https://deployed-site.whatever
 Database: https://deployed-site.whatever
-
+nj
 ## Directory Structure
 my-app/
 ├─ backend/
