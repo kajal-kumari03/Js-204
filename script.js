@@ -1,101 +1,46 @@
-    document.addEventListener("DOMContentLoaded", function() {
- var message = document.getElementById("message");
+// JavaScript to change text dynamically
+var textOptions = ["homes", "hotels", "cottages", "villas", "apartment", "condo hotels"];
+var currentIndex = 0;
+function changeText() {
+    currentIndex = (currentIndex + 1) % textOptions.length;
+    document.getElementById("dynamic-text").textContent = textOptions[currentIndex];
+}
+setInterval(changeText, 2000);
 
-
- function checkFields() {
-   var location = document.getElementById("location").value;
-   var checkIn = document.getElementById("check-in").value;
-   var checkOut = document.getElementById("check-out").value;
-   var guests = document.getElementById("guests").value;
-
-   if (!location || !checkIn || !checkOut || !guests === "0") {
-     message.textContent = "Please fill out all required fields: location, check-in date, check-out date, and number of guests.";
-     message.style.display = "block";
-     return false;
-   }
-
-   message.style.display = "none"; 
-   return true;
- }
-
- document.getElementById("button").addEventListener("click", function() {
-   if (checkFields()) {
-  
-   
-   }
- });
-});
-
-
-
-    const currencyButton = document.getElementById('currencyButton');
-    const togglePopup = document.getElementById('togglePopup');
-  
-   
-    function toggleTogglePopup() {
-      togglePopup.style.display = togglePopup.style.display === 'none' ? 'block' : 'none';
-    }
-  
-    // Function to handle currency selection
-    function handleCurrencySelection() {
-      const selectedCurrency = this.value;
-      currencyButton.innerText = selectedCurrency;
-      // Remove selected class from all labels
-      document.querySelectorAll('.toggle-popup label').forEach(label => {
-        label.classList.remove('selected');
+let signin=document.getElementById("signin-btn");
+signin.addEventListener("click", function() {
+        window.open("signin.html", "_blank");
       });
-      // Add selected class to the clicked label
-      this.parentNode.classList.add('selected');
-      toggleTogglePopup(); // Close the toggle popup after selection
-    }
-  
-    // Get all currency radio buttons
-    const currencyRadioButtons = document.querySelectorAll('input[name="currency"]');
-  
-    // Add event listener to each currency radio button
-    currencyRadioButtons.forEach(button => {
-      button.addEventListener('click', handleCurrencySelection);
+
+      let register=document.getElementById("register-btn");
+      register.addEventListener("click", function() {
+              window.open("signin.html", "_blank");
+            });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const cartWidth = document.querySelector('.cart').offsetWidth;
+    const numCarts = slider.children.length;
+    const frameWidth = document.querySelector('.slider-frame').offsetWidth;
+    let currentPosition = 0;
+
+    const numVisibleCarts = 2; // Number of carts visible at a time
+    const visibleCartsWidth = numVisibleCarts * cartWidth +1300;
+
+    prevBtn.addEventListener('click', function() {
+      currentPosition += cartWidth;
+      currentPosition = Math.min(currentPosition, 0);
+      slider.style.transform = `translateX(${currentPosition}px)`;
     });
-  
-    // Event listener for the currency button
-    currencyButton.addEventListener('click', toggleTogglePopup);
 
-
-    // Get the button and toggle popup elements
-  const languageSelectionButton = document.getElementById('languageSelectionButton');
-  const languageTogglePopup = document.getElementById('languageTogglePopup');
-
-  // Function to toggle the toggle popup
-  function toggleLanguageTogglePopup() {
-    languageTogglePopup.style.display = languageTogglePopup.style.display === 'none' ? 'block' : 'none';
-  }
-
-  // Function to handle language selection
-  function handleLanguageSelection() {
-    const selectedLanguage = this.value;
-    languageSelectionButton.innerText = selectedLanguage;
-    // Remove selected class from all labels
-    document.querySelectorAll('.language-toggle-popup label').forEach(label => {
-      label.classList.remove('language-selected');
+    nextBtn.addEventListener('click', function() {
+      currentPosition -= cartWidth;
+      const maxPosition = -(numCarts - numVisibleCarts) * cartWidth;
+      currentPosition = Math.max(currentPosition, maxPosition);
+      slider.style.transform = `translateX(${currentPosition}px)`;
     });
-    // Add selected class to the clicked label
-    this.parentNode.classList.add('language-selected');
-    toggleLanguageTogglePopup(); // Close the toggle popup after selection
-  }
-
-  // Get all language radio buttons
-  const languageRadioButtons = document.querySelectorAll('input[name="language"]');
-
-  // Add event listener to each language radio button
-  languageRadioButtons.forEach(button => {
-    button.addEventListener('click', handleLanguageSelection);
   });
-
-  // Event listener for the language button
-  languageSelectionButton.addEventListener('click', toggleLanguageTogglePopup);
-
-
-
-
-  
-
