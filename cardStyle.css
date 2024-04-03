@@ -23,13 +23,13 @@ header {
 }
 
 .header-container {
-  /* margin-top: -25px; */
+  margin-top: -15px;
   /* padding: 10px; */
   width: 80%;
   display: flex;
   height: 60px;
   justify-content: space-between;
-  width: 80%;
+ 
 }
 
 #mid > a img {
@@ -103,7 +103,7 @@ img{
   margin-left: -20px;
   /* max-width: 1000px; */
   padding-top: 40px;
-  margin-top: 30px;
+  margin-top: -10px;
 }
 
 nav {
@@ -233,7 +233,7 @@ nav li:hover {
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .btn:hover {
