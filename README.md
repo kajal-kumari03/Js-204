@@ -7,7 +7,7 @@ v addresses the problem of efficiently locating and booking accommodations by of
 Frontend: https://deployed-site.whatever
 Backend: https://deployed-site.whatever
 Database: https://deployed-site.whatever
-nj
+
 ## Directory Structure
 my-app/
 ├─ backend/
@@ -15,4 +15,20 @@ my-app/
 ├─ frontend/
 │  ├─ ├─ Html
 |  ├─ ├─ CSS
+
+## Video Walkthrough of the project
+Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+
+## Video Walkthrough of the codebase
+Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+
+## Features
+List out the key features of your application.
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## design decisions or assumptions
+List your design desissions & assumptions
 
