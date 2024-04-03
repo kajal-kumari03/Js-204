@@ -5,7 +5,7 @@ body {
 
 
 .form {
-    max-width: 77%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -107,7 +107,7 @@ body {
     text-decoration: underline;
     color: burlywood;
 }
-#button-container {
+#button-contain{
     padding: 20px;
 }
 .discover {
@@ -128,7 +128,7 @@ body {
     margin-left: 15px;
     margin-top: 30px;
 }
-#img-container {
+#img-contain {
     flex-grow: 1;
 }
 
@@ -140,7 +140,7 @@ body {
 .foot-h2 {
     font-weight: 800;
 }
-.button-container button {
+.button-contain button {
     display: inline-block;
     /* Display buttons in the same line */
     margin: 0 10px;
@@ -180,7 +180,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /* 5 columns */
-    grid-gap: 10px;
+    grid-gap: 15px;
     /* Gap between grid items */
     margin-top: 20px;
     a {
@@ -202,6 +202,7 @@ body {
     overflow: hidden;
     height: 150px;
     margin: 0 auto;
+    margin-top: 20px;
   }
 
   .slider {
