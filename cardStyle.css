@@ -8,27 +8,28 @@
 /*kajal code started  */
 #fir {
   background-color: #0a43ae;
+  /* margin-left: 100px; */
 }
 
 header {
   width: 80%;
-  margin-left: 20%;
-  height: 50vh;
+  margin-left: 12%;
+  height: 28rem;
 }
 
 #card_code {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+ margin: auto;
 }
 
 .header-container {
-margin-left: -110px;
+  margin-top: -15px;
   /* padding: 10px; */
   width: 100%;
   display: flex;
   height: 60px;
   justify-content: space-between;
+  /* margin: auto; */
  
 }
 
@@ -49,6 +50,9 @@ margin-left: -110px;
   justify-content: center;
   align-items: center;
   align-content: center;
+  img{
+    border-radius: 50%;
+  }
 }
 #regis {
   color: rgb(69, 86, 211);
@@ -60,8 +64,8 @@ margin-left: -110px;
   justify-content: center;
   font-weight: 900;
   font-size: 300;
-  width: 80px;
-  height: 40px;
+  width: 7vw;
+  height: 5vh;
   cursor: pointer;
   text-decoration: none;
 }
@@ -69,8 +73,8 @@ margin-left: -110px;
   color: rgb(69, 86, 211);
   border: 1px solid rgb(27, 69, 183);
   background-color: #edeff4;
-  width: 80px;
-  height: 40px;
+  width: 7vw;
+  height: 5vh;
   border-radius: 5px;
   text-align: center;
   justify-content: center;
@@ -81,9 +85,15 @@ margin-left: -110px;
 }
 #regis:hover {
   background-color: #3d6bf8;
+  a{
+    color: #fff;
+  }
 }
 #signs:hover {
   background-color: #3d6bf8;
+  a{
+    color: #fff;
+  }
 }
 .logo img {
   width: 80px;
@@ -100,10 +110,10 @@ img{
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-left: -170px;
+  margin-left: -20px;
   /* max-width: 1000px; */
-  padding-top: 40px;
-  margin-top: -10px;
+  padding-top: 4vh;
+  margin-top: 3vh;
 }
 
 nav {
@@ -136,21 +146,28 @@ nav li:hover {
 }
 
 .search-bar {
- 
-  margin-top: -27.5px;
+  margin-top: -2.5vh;
+  margin-left: 1vw;
   position: relative;
   display: flex;
 }
 
 #main {
-  width: 120%;
-  margin-left: 175px;
+  width: 80%;
+  margin: auto;
 }
 
 #location,
 #check-in,
 #check-out {
   height: 30px;
+}
+#rooms, #children, #guests{
+  width: 8vw;
+}
+
+#location{
+  width: 18vw;
 }
 
 .location label,
@@ -162,25 +179,28 @@ nav li:hover {
 }
 
 .location input[type="text"] {
-  padding: 18px 10px;
+  padding: 18px 0px;
   border: 4px solid rgb(205, 205, 3);
   border-radius: 1px solid #ccc;
+  width: 15vw;
 }
 
 .date-range input[type="date"] {
-  padding: 18px 10px;
+  padding: 18px 0px;
   border: 4px solid rgb(205, 205, 3);
   border-radius: 1px solid #ccc;
+  width: 15vw;
 }
 
 .guests {
   display: flex;
+  width: 25vw;
 }
 
 .guests select {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding:10px 10px;
+  padding:10px 0px;
   border: 4px solid rgb(205, 205, 3);
   border-radius: 1px solid #ccc;
 }
@@ -203,24 +223,35 @@ nav li:hover {
   border: 4px solid rgb(205, 205, 3);
 }
 
-
+.accommodation-type {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
 
 .accommodation-type input[type="checkbox"] {
-  margin-top: 15px;
-  margin-right: 12px;
+  margin-top: 50px;
+}
+
+#entire-home{
+  margin-left: -175px;
+  margin-top: -20px;
+}
+
+#looking_flight{
+  margin-left: -190px;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 7vh;
   color: white;
 }
 
 .box img {
-  width: 500px;
-  height: 500px;
+  width: 150vw;
+  height: 150vh;
 }
 
 .btn {
@@ -243,15 +274,27 @@ nav li:hover {
 
 #currencyButton {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  margin-top: 1vh;
+  b{
+    margin-left: 10px;
+  }
 }
 
 #languageSelectionButton {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  img{
+  width: 40px;
+  height: 40px;
+  /* object-fit: cover; */
+  margin-left: 3px;
+  }
+  background-color: #0a43ae;
+  border: none;
 }
 
 .toggle-popup {
@@ -339,9 +382,6 @@ nav li:hover {
 
 #currencyButton:hover::after {
   opacity: 1; /* Show tooltip on hover */
-}
-#languageSelectionButton img {
-  margin-top: 8px;
 }
 #languageSelectionButton::after {
   content: attr(data-tooltip); /* Tooltip content */
@@ -520,7 +560,7 @@ nav li:hover {
 }
 
 #card_box4 {
-  margin-bottom: 13rem;
+  margin-bottom: 3rem;
 }
 
 #card_box4 .container_second .card_container .explore_india_img_container {
@@ -530,3 +570,141 @@ nav li:hover {
   border-radius: 10px;
 }
 /*junaid code ended  */
+
+/* rick code start. */
+.first{
+  background-color: rgb(0,34,79);
+  height: 350px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+
+}
+.firButtons{
+  padding: 20px;
+  width: 160px;
+  border-radius: 5px;
+  margin: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: large; 
+}
+/* ----------- */
+#first_container{
+  display: block;
+}
+
+.mobile_version{
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.foot{
+  margin-top: 100px;
+  transform: translate(0px, 45px);
+}
+
+.first-h1{
+  margin-top: 10px;
+}
+
+/* ----------------------- */
+
+.second{
+  background-color: rgb(0,59,149);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#secButton{
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: rgb(0,59,149);           
+  border: none;
+  cursor: pointer;
+  width: 170px;
+ border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  
+}
+#secButton:hover{
+  background-color:  silver;
+}
+
+.sec1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+   flex-wrap: wrap;
+}
+.sec1 a {
+color: white;
+font-weight: bold;
+transition: background-color 0.3s, color 0.3s; /* Added transition for smooth hover effect */
+padding: 10px 20px; /* Added padding to make hover effect more visible */
+}
+
+.sec1 a:hover {
+background-color:blueviolet; /* Changed to grey */
+}
+
+.third{
+  display: flex;
+ flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 5px;
+  padding-top: 10px;
+  width: 1240px;
+  margin: auto;
+}
+
+.third .a {
+  flex: 1;
+
+}
+
+.third .a a:hover {
+   color: rgb(200, 200, 108);
+}
+.third .a a {
+  color: #007bff;
+  text-decoration: none;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 10px 0;
+}
+.aa{
+  text-align: center;
+ font-size: 1.2rem;
+}
+.four{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  
+}
+img{
+  margin: 10px;
+  height: 30px;
+}
+
+/* 
+ricky code end.. */
