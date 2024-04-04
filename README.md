@@ -63,7 +63,7 @@ In this session we are try to show our popular destination from our end by using
 ![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/fedf6d2b-934e-423a-91d8-028d62566510)
 
 #Footer
-In this part we are providing the option to subcription our app and once you subscribe we showing confirmation message .
+In this part we are providing the option to subcription our app and once you subscribe we showing confirmation message . Then we providing some clickable anchor when we click and we will go on then particular page . 
 ![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/ec77d022-8742-4603-8a5c-41d50c62df35)
 
 
