@@ -18,11 +18,10 @@ my-app/
 |  ├─ ├─ CSS
 
 ## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+Attaching  a  video :https://youtu.be/UJ8XyVM4I40
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
-
+Attaching a short video walkthough of codebase :https://youtu.be/xyBoHhiETNc
 ## Features
 List out the key features of your application.
 
@@ -44,4 +43,34 @@ npm install my-project
 cd my-project
 npm start
 ```
+
+## Usage
+Provide instructions and examples on how to use your project.
+#Header 
+In the header part there is nav bar over there you can find logo , slect your currency , select your language and you can sign and register by clicking . Then in the next line we are having variety of anchor tab from there you are redirect to that page/ tab. In the last from there you can also search hotels by selecting the location you want to go then by select check-in date and check-out date and in last choose the number of people after in the last click on search button .
+![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/54bdfd74-288e-498c-82b3-08775e58b6ce)
+
+#Cards
+Over here you can have left and right scrollable bar. If we click on right scrollable bar it will shift to right side and vice versa. after that if we click on any card according to your selective card then you will redirect to that perticular page.
+![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/cbfbcbfd-f08d-455b-a16b-acc036f8a151)
+
+#Discover Homes
+In this particular part we can find again sign-in and regiester button . We added this part so if you forget to sign-in above and you want to sign-in/register  our site so you can do from here also no need to back to nav part. And we use the property do that its show what things we can have in out app and it is sutomatically moving .
+![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/6f86fecf-b4c6-4c0b-a247-b74030d44195)
+
+#Destination 
+In this session we are try to show our popular destination from our end by using our data.
+![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/fedf6d2b-934e-423a-91d8-028d62566510)
+
+#Footer
+In this part we are providing the option to subcription our app and once you subscribe we showing confirmation message .
+![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/ec77d022-8742-4603-8a5c-41d50c62df35)
+
+
+
+
+
+
+
+
 
