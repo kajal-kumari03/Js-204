@@ -28,7 +28,7 @@ List out the key features of your application.
 
 - Search and Filtering: 
 - able to login 
-- cards are scrollable
+- cards are scrollable and clickable
 
 ## design decisions or assumptions
 -Decision: Implement robust search and filtering functionality to allow users to find accommodations based on various criteria such as location, price, amenities, and user ratings.
@@ -44,3 +44,4 @@ npm install my-project
 cd my-project
 npm start
 ```
+
