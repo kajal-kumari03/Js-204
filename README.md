@@ -8,7 +8,7 @@ v addresses the problem of efficiently locating and booking accommodations by of
 Frontend: https:https://660fab659e3ab0620641652b--inspiring-shortbread-b1fc7e.netlify.app/
 
 
-Team Name :- Compiler-Chintan-2345
+Team Name :- Interface-Itihaas-2345
 Team members:-
 1-Kajal Kumari(ft31_050)
 
