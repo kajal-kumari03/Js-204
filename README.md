@@ -67,26 +67,16 @@ In this part we are providing the option to subcription our app and once you sub
 ![image](https://github.com/kajal-kumari03/Js-204/assets/102850092/ec77d022-8742-4603-8a5c-41d50c62df35)
 
 
-
-## Credentials
-Provide user credentials for autheticated pages
-
 ## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
-
-## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
+Link:https://github.com/kajal-kumari03/Js-204/tree/main/Server
 
 
 ## Technology Stack
-List and provide a brief overview of the technologies used in the project.
+-Node.js
+-Html
+-CSS
+-Json
 
-- Node.js
-- Express.js
-- MongoDB
-- Other libraries/modules
 
 
 
