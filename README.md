@@ -6,6 +6,7 @@ v addresses the problem of efficiently locating and booking accommodations by of
 
 ## Deplolyed App
 Frontend: https:https://660fab659e3ab0620641652b--inspiring-shortbread-b1fc7e.netlify.app/
+Backend:https://js-204.onrender.com/
 
 
 Team Name :- Interface-Itihaas-2345
