@@ -13,7 +13,7 @@ Team Name :- Interface-Itihaas-2345
 Team members:-
 1-Kajal Kumari(ft31_050)
 
-2- Junaid khan(ft30_)
+2- Junaid khan(ft31_169)
 
 3- Adarsh Srivastava (ft30_269)
 
